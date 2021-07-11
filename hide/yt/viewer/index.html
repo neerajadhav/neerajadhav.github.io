@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#111417">
+
+    <!-- Favicon and title 
+    <link rel="icon" href="https://www.youtube.com/s/desktop/d9bba4ed/img/favicon.ico">
+    -->
+    <title>Zestara</title>
+
+    <!-- Halfmoon CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true" data-set-preferred-theme-onload="true" onload="loadXMLDoc()">
+
+    <!-- Page wrapper start -->
+    <div class="page-wrapper with-navbar with-sidebar" data-sidebar-type="overlayed-sm-and-down">
+      <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+      <!-- Navbar start -->
+      <nav class="navbar justify-content-between">
+        <!-- Navbar content (with toggle sidebar button) -->
+        <div class="navbar-content">
+          <i onclick="halfmoon.toggleSidebar()" class="fa fa-bars"></i>
+          &nbsp;<b>Zestara</b>
+        </div>
+        
+        <!-- Input group with appended text -->
+        <div class="input-group ml-auto col-lg-3 col-7">
+          <input type="text" class="form-control" placeholder="Search YouTube" onkeyup="myFilter()">
+          <div class="input-group-append">
+            <span class="input-group-text"><i class="fa fa-search"></i></span>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar end -->
+
+      <!-- Sidebar start -->
+      <div class="sidebar">
+        <div class="sidebar-menu">
+          <a href="#" class="sidebar-link sidebar-link-with-icon">
+            <span class="sidebar-icon bg-transparent justify-content-start mr-0">
+              <i class="fa fa-dashboard"></i>
+            </span>
+            Dashboard
+          </a>
+          <a href="#" class="sidebar-link sidebar-link-with-icon">
+            <span class="sidebar-icon bg-transparent justify-content-start mr-0">
+              <i class="fa fa-video-camera"></i>
+            </span>
+            Live
+          </a>
+          <a href="#" class="sidebar-link sidebar-link-with-icon">
+            <span class="sidebar-icon bg-transparent justify-content-start mr-0">
+              <i class="fa fa-credit-card"></i>
+            </span>
+            Monetization
+          </a>
+          <a href="#" class="sidebar-link sidebar-link-with-icon">
+            <span class="sidebar-icon bg-transparent justify-content-start mr-0">
+              <i class="fa fa-folder"></i>
+            </span>
+            All Streams
+          </a>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+
+      <!-- Content wrapper start -->
+      <div class="content-wrapper">
+        <div class="w-full h-full">
+          <div class="conatiner-fluid">
+            <div class="conten">
+              <div class="row">
+                <div class="col col-12 col-lg-8">
+                  <center>
+                    <video style="width: 100%;" controls>
+                      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                  </center>
+                  <div class="content">
+                    <!-- Description collapse panel -->
+                    <details class="collapse-panel w-full mw-full"> <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+                      <summary class="collapse-header">
+                        <div class="content-title">
+                          This is a cool title | The famous Bunny Rabit video by w3s
+                        </div>
+                      </summary>
+                      <div class="collapse-content">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nostrum, eligendi eveniet voluptate quae pariatur reiciendis natus illum totam dolorum nam beatae laboriosam itaque mollitia quia quaerat voluptas sed magni.
+                      </div>
+                    </details>
+                    <br>
+                    <div class="table-responsive">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <th><i class="fa fa-lg fa-thumbs-up"></i></th>
+                            <th><i class="fa fa-lg fa-thumbs-down"></i></th>
+                            <th><i class="fa fa-lg fa-share"></i></th>
+                            <th><i class="fa fa-lg fa-download"></i></th>
+                            <th><i class="fa fa-lg fa-bookmark"></i></th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-2 col-lg-1">
+                        <img src="https://neerajadhav.github.io/data-img/logo.png" alt="neerajadhav" style="width: 35px; margin-top: 5px !important;" class="rounded-circle my-auto">
+                      </div>
+                      <div class="col my-auto">
+                        Neeraj Adhav
+                      </div>
+                      <div class="col-3 my-auto">
+                        <button class="btn btn-sm btn-danger float-right">Subscribe</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-12 col-lg-4">
+                  <div class="content">
+                    <div class="content-title">
+                      Live Chat
+                    </div>
+                    <hr>
+                    <div class="row mb-20">
+                      <div class="col-2">
+                        <center><img style="margin-top: 5px;" src="https://source.unsplash.com/100x100/?nature,water" width="38px" class="rounded-circle mt-2" alt="commentor"></center>
+                      </div>
+                      <div class="col">
+                        <b>John Doe</b><br>amet consectetur adipisicing elit. Magnam incidunt illum est, tempore quia delectus dolor nesciunt tenetur rem eligendi voluptat
+                      </div>
+                    </div>
+                    <div class="row mb-20">
+                      <div class="col-2">
+                        <center><img style="margin-top: 5px;" src="https://source.unsplash.com/100x100/?spiderman" width="38px" class="rounded-circle mt-2" alt="commentor"></center>
+                      </div>
+                      <div class="col">
+                        <b>Peter Parker</b><br>Magnam incidunt illum est, tempore quia delectus dolor nesciunt tenetur
+                      </div>
+                    </div>
+                    <div class="row mb-20">
+                      <div class="col-2">
+                        <center><img style="margin-top: 5px;" src="https://source.unsplash.com/100x100/?google" width="38px" class="rounded-circle mt-2" alt="commentor"></center>
+                      </div>
+                      <div class="col">
+                        <b>Larry Page</b><br>tempore quia delectus dolor nesciunt tenetur rem eligendi voluptate dicta repellendus debitis autem ullam ipsa harum veritatis animi?
+                      </div>
+                    </div>
+                    <div class="row mb-20">
+                      <div class="col-2">
+                        <center><img style="margin-top: 5px;" src="https://source.unsplash.com/100x100/?india" width="38px" class="rounded-circle mt-2" alt="commentor"></center>
+                      </div>
+                      <div class="col">
+                        <b>Amitabh</b><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam incidunt illum est
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Content wrapper end -->
+    </div>
+    <!-- Page wrapper end -->
+
+    <!-- Halfmoon JS -->
+  <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#111417">
+
+    <title>Live</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="https://neerajadhav.github.io/sn_css/style3.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h3>Zestara</h3>
+                <p class="text-light">Studio</p>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>MENU</p>
+                <li>
+                    <a href="../">Dashboard</a>
+                </li>
+                <li class="active">
+                    <a href="./">Live</a>
+                </li>
+                </li>
+                <li>
+                    <a href="../monetization">Monetization</a>
+                </li>
+                </li>
+                <li>
+                    <a href="../all-streams">All Streams</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="bg-dark text-light">
+
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background: black;">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-dark">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-user-circle"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                          <br />
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            
+            
+            
+            
+            
+            
+            
+            <div class="container mt-3">
+              <!-- Content wrapper start -->
+      <div class="content-wrapper">
+        <div class="w-full h-full">
+          <div class="content">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <center>
+                      <video style="width: 100%;" controls>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                      </video>
+                    </center>
+                  </div>
+                  <div class="col-lg-6 px-lg-10">
+                    <!-- Input group with prepended text -->
+                    <div class="input-group mt-20 mt-lg-0">
+                      <div class="input-group-prepend">
+                        <span class="bg-dark text-light input-group-text">Title</span>
+                      </div>
+                      <input type="text" class="bg-dark text-light form-control" placeholder="Your username" value="This is a cool title | The famous Bunny Rabit video by w3s">
+                    </div>
+                    <!-- Select box -->
+                    <select class="bg-dark text-light mt-3 form-control" id="select-1">
+                      <option value="" selected="selected" disabled="disabled">Category</option>
+                      <option value="people and blog">People and Blog</option>
+                      <option value="entertainment">Entertainment</option>
+                    </select>
+                    <select class="bg-dark text-light mt-3 form-control" id="select-2">
+                      <option value="" selected="selected" disabled="disabled">Privacy</option>
+                      <option value="private">Private</option>
+                      <option value="public">Public</option>
+                      <option value="unlisted">Unlisted</option>
+                    </select>
+                    <!-- Badge group as link -->
+                    <a href="#" class="bg-dark text-light badge-group" role="group" aria-label="views">
+                      <span class="badge bg-dark text-white mt-3">Views</span>
+                      <span class="badge badge-primary mt-3">1.2M</span>
+                    </a>
+                    <a href="#" class="bg-dark text-light badge-group" role="group" aria-label="likes">
+                      <span class="badge bg-dark text-white mt-3">Likes</span>
+                      <span class="badge badge-success mt-3">100K</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mt-4 mt-lg-0">
+                <div class="border p-2">
+                  <b>Live Chat</b>
+                </div>
+                    <div class="row mt-4">
+                      <div class="col-2">
+                        <center><img style="margin-top: 5px;" src="https://source.unsplash.com/100x100/?nature,water" width="38px" class="rounded-circle mt-2" alt="commentor"></center>
+                      </div>
+                      <div class="col">
+                        <small><b>John Doe</b><br>amet consectetur adipisicing elit. Magnam incidunt illum est, tempore quia delectus dolor nesciunt tenetur rem eligendi voluptat</small>
+                      </div>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col-2">
+                        <center><img style="margin-top: 5px;" src="https://source.unsplash.com/100x100/?spiderman" width="38px" class="rounded-circle mt-2" alt="commentor"></center>
+                      </div>
+                      <div class="col">
+                        <small><b>Peter Parker</b><br>amet consectetur adipisicing elit. Magnam incidunt illum est, tempore quia delectus dolor nesciunt tenetur rem eligendi voluptat</small>
+                      </div>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col-2">
+                        <center><img style="margin-top: 5px;" src="https://source.unsplash.com/100x100/?wrestling" width="38px" class="rounded-circle mt-2" alt="commentor"></center>
+                      </div>
+                      <div class="col">
+                        <small><b>Dwayne Johnson</b><br>amet consectetur adipisicing elit. Magnam incidunt illum est, tempore quia delectus dolor nesciunt tenetur rem eligendi voluptat</small>
+                      </div>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col-2">
+                        <center><img style="margin-top: 5px;" src="https://source.unsplash.com/100x100/?indian flag" width="38px" class="rounded-circle mt-2" alt="commentor"></center>
+                      </div>
+                      <div class="col">
+                        <small><b>Narendra Modi</b><br>amet consectetur adipisicing elit. Magnam incidunt illum est, tempore quia delectus dolor nesciunt tenetur rem eligendi voluptat</small>
+                      </div>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col-2">
+                        <center><img style="margin-top: 5px;" src="https://source.unsplash.com/100x100/?facebook" width="38px" class="rounded-circle mt-2" alt="commentor"></center>
+                      </div>
+                      <div class="col">
+                        <small><b>Mark Zuck</b><br>amet consectetur adipisicing elit. Magnam incidunt illum est, tempore quia delectus dolor nesciunt tenetur rem eligendi voluptat</small>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Content wrapper end -->
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
