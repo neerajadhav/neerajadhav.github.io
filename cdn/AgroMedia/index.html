@@ -17,13 +17,18 @@
       .menu-table a{
         color: black !important;
       }
+
+      .menu-table-list tr:hover{
+        background-color: lightgray;
+      }
+
     </style>
 
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-2" style="border-right: 1px solid lightgray;">
+        <div class="col-lg-3 col-2" style="border-right: 1px solid lightgray;  height: 100vmax;">
           <div class="position-sticky" style="top: 0rem;">
 
             <table class="table table-borderless menu-table">
@@ -35,7 +40,7 @@
               </thead>
             </table>
 
-            <table class="table table-borderless">
+            <table class="table table-borderless menu-table-list">
               <tr class="text-primary">
                 <td class="text-center"><a style="text-decoration: none;" href="./"><big> <i class="fa fa-home"></i></big></a></td>
                 <td class="d-none d-lg-block"><a style="text-decoration: none;" href="./index.html"><big>Home</big></a></td>
