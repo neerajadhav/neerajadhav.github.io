@@ -2,7 +2,7 @@
 self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open("static").then(cache => {
-            return cache.addAll(['/', '/author/','/author/neeraj/','/archive/','/column/']);
+            return cache.addAll(['/', '/author/','/author/neeraj/','/tags/','/series/']);
         })
     );
 });
