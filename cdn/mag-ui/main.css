@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+.disable-text-selection{
+    -ms-user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+     user-select:none;
+}
+
 body{
     overflow: hidden;
 }
@@ -12,24 +21,37 @@ html {
 }
 
 
-#page-1, nav a:nth-of-type(1) {
+#a1, nav a:nth-of-type(1) {
 	background-color: #8e44ad;
 }
 
-#page-2, nav a:nth-of-type(2) {
+#a2, nav a:nth-of-type(2) {
 	background-color: #e74c3c;
 }
 
-#page-3, nav a:nth-of-type(3) {
+#a3, nav a:nth-of-type(3) {
 	background-color: #2980b9;
+}
+
+#about, nav a:nth-of-type(4) {
+	background-color: black;
 }
 
 nav {
 	position: fixed;
 	top: 50%;
-	right: 10px;
+	right: 5px;
 	transform: translateY(-50%);
     z-index: 10;
+}
+
+.logo {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+    z-index: 10;
+    width: 50px;
+    border-radius: 10px;
 }
 
 nav a {
@@ -39,14 +61,20 @@ nav a {
 	margin: 10px;
 	height: 30px;
 	width: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .container{
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: auto;
-    /* overflow: hidden; */
+    /* overflow: auto; */
+    overflow: hidden;
     margin: auto auto;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
@@ -60,28 +88,13 @@ nav a {
     background-blend-mode: multiply;
 }
 
-.container .section:nth-child(2){
-    background: rgb(2,0,36,0.6) url(1.jpg) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.container .section:nth-child(3){
-    background: rgb(0, 0, 0, 0.6) url(2.jpg) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.container .section:nth-child(4){
-    background: rgb(0, 0, 0, 0.6) url(3.jpg) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.container .section .content{
+.container .section .header{
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    top: 0px;
+    left: 0px;
+    max-width: 80%;
     color: aliceblue;
-    max-width: 50%;
+    padding: 20px;
+    font-size: 2.5vmax;
+    text-shadow: 1.5px 1.5px 1.5px #000;
 }
