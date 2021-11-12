@@ -48,18 +48,38 @@ nav {
 }
 
 nav a {
-	border: 4px solid #fff;
 	border-radius: 50%;
 	display: block;
 	margin: 10px;
 	height: 20px;
 	width: 20px;
     color: #fff;
+    background-color: rgb(19, 20, 22);
     text-align: center;
     line-height: 20px;
     font-size: 20px;
     text-decoration: none;
     font-weight: bold;
+}
+
+nav a:nth-child(1) {
+    border: 4px solid #f79533;
+}
+
+nav a:nth-child(2) {
+    border: 4px solid #ef4e7b;
+}
+
+nav a:nth-child(3) {
+    border: 4px solid #5073b8;
+}
+
+nav a:nth-child(4) {
+    border: 4px solid #07b39b;
+}
+
+nav a:nth-child(5) {
+    border: 4px solid #6fba82;
 }
 
 aside {
@@ -147,7 +167,7 @@ aside a {
     line-height:12px;
   }
   
-  .read-btn:before {
+  .read-btn:before{
     content:'';
     z-index:1;
     position:absolute;
