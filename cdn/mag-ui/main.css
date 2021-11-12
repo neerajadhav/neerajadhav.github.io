@@ -3,7 +3,15 @@
     padding: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@font-face {
+    font-family: biko;
+    src: url(./Biko_Bold.otf) format("truetype");
+}
+
+@font-face {
+    font-family: sans3;
+    src: url(./SourceSans3-Light.otf) format("truetype");
+}
 
 .disable-text-selection{
     -ms-user-select:none;
@@ -104,7 +112,7 @@ aside a {
     color: aliceblue;
     font-size: 2.5vmax;
     text-shadow: 1.5px 1.5px 1.5px #000;
-    font-family: 'Yeseva One', cursive;
+    font-family: 'biko';
 }
 
 .content{
@@ -116,6 +124,7 @@ aside a {
     padding: 20px;
     font-size: 2.5vmax;
     text-shadow: 1.5px 1.5px 1.5px #000;
+    font-family: 'sans3';
 }
 
 .read-btn{
