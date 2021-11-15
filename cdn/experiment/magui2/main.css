@@ -79,3 +79,8 @@ a{
     font-family: "Constantia";
     font-size: 20px;
 }
+
+.minipost{
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
