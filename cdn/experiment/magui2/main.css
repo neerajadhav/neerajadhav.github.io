@@ -8,6 +8,16 @@
     src: url(./impact.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "TwCenClassMT";
+    src: url(./TwCenMTStd-Bold.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Constantia";
+    src: url(./Constantia\ Font.ttf) format("truetype");
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -35,11 +45,22 @@ a{
 }
 
 .hero{
-    background: #00c3ff url(https://images.unsplash.com/photo-1560762484-813fc97650a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80);
+    background: #00c3ff url(https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
     background-repeat: no-repeat;
     background-size: center center;
     color: white;
     font-family: "impactlocal";
     font-size: 40px;
     padding-top: 100px;
+}
+
+.section-title{
+    font-family: "TwCenClassMT";
+    border-bottom: 2px solid black;
+    padding: 30px 0px 0px 0px;
+}
+
+.featured h2{
+    font-family: "Constantia";
+    /* font-size: 40px; */
 }
