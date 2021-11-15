@@ -4,7 +4,7 @@
 }
 
 @font-face {
-    font-family: "impact";
+    font-family: "impactlocal";
     src: url(./impact.ttf) format("truetype");
 }
 
@@ -39,7 +39,7 @@ a{
     background-repeat: no-repeat;
     background-size: center center;
     color: white;
-    font-family: impact;
+    font-family: "impactlocal";
     font-size: 40px;
     padding-top: 100px;
 }
