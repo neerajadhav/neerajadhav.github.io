@@ -28,10 +28,10 @@ a{
     color: inherit;
 }
 
-.header-nav-item{
+/* .header-nav-item{
     font-family: BAHNSCHRIFT;
     font-size: 18px;
-}
+} */
 
 .header-nav-item a:hover{
     color: black;
@@ -41,16 +41,18 @@ a{
 
 .active{ 
     border-bottom: 3px solid #00c3ff;
+    font-weight: bold;
 }
 
 .logo{
     max-width: 200px;
-    filter: drop-shadow(2px 2px 2px #00c3ff);
-        -webkit-filter: drop-shadow(2px 2px 2px #00c3ff);
+    /* filter: drop-shadow(2px 2px 2px #00c3ff);
+        -webkit-filter: drop-shadow(2px 2px 2px #00c3ff); */
 }
 
 .hero{
     background: #00c3ff url(https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);
+    /* background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82); */
     background-repeat: no-repeat;
     background-size: center center;
     color: white;
@@ -83,4 +85,17 @@ a{
 .minipost{
     padding-bottom: 10px;
     border-bottom: 1px solid gray;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 12px;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
 }
