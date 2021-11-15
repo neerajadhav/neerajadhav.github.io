@@ -99,3 +99,8 @@ a{
 .sticky + .content {
   padding-top: 102px;
 }
+
+footer{
+    background-color: rgb(0, 116, 145);
+    color: white;
+}
