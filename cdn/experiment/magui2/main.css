@@ -115,17 +115,31 @@ p{
     border-bottom: none;
 }
 
+.single-content{
+    /* margin-top: 50px; */
+}
+
+.single-content h1{
+    font-family: "Constantia";
+    margin: 50px 0px;
+}
+
+.single-content p{
+    font-family: "mulish";
+}
+
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
-  left: 12px;
+  left: 0px;
   width: 100%;
+  background-color: white;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
-  padding-top: 102px;
+  margin-top: 65.5px;
 }
 
 footer{
