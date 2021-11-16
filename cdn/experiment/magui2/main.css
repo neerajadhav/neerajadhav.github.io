@@ -23,9 +23,28 @@
     src: url(./Mulish-Regular.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "nouvelle";
+    src: url(./nouvelle_vague_final.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(./Lato-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(./Lato-Regular.ttf) format("truetype");
+}
+
 a{
     text-decoration: none;
     color: inherit;
+}
+
+p{
+    font-family: "Mulish";
 }
 
 /* .header-nav-item{
@@ -45,9 +64,7 @@ a{
 }
 
 .logo{
-    max-width: 200px;
-    /* filter: drop-shadow(2px 2px 2px #00c3ff);
-        -webkit-filter: drop-shadow(2px 2px 2px #00c3ff); */
+    font-family: "nouvelle";
 }
 
 .hero{
@@ -59,6 +76,13 @@ a{
     font-family: "impactlocal";
     font-size: 40px;
     padding-top: 100px;
+}
+
+.ft-blocks{
+    background-color: black;
+    padding: 5px;
+    color: white;
+    height: 300px;
 }
 
 .section-title{
