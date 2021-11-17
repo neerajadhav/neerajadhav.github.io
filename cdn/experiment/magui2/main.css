@@ -57,7 +57,7 @@ p{
 }
 
 .header-nav-item a:hover{
-    color: black;
+    color: inherit;
     filter: drop-shadow(2px 2px 2px #00c3ff);
         -webkit-filter: drop-shadow(2px 2px 2px #00c3ff);
 }
