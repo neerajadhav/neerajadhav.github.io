@@ -6,3 +6,15 @@ body{
 .logo{
     color: white;
 }
+
+.featured h2{
+    color: #bababa;
+}
+
+.minipost p{
+    color: #bababa;
+}
+
+.single-content h1,h2{
+    color: #bababa;
+}
