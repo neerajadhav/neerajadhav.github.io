@@ -12,6 +12,6 @@ function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky","shadow");
   } else {
-    header.classList.remove("sticky","shadow");
+    header.classList.remove("sticky");
   }
 }
