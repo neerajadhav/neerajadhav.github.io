@@ -1,0 +1,36 @@
+body{
+    background-color: #f1f3f4;
+}
+
+::-moz-selection{
+    color: black;
+	background: #fcd770;
+}
+
+::selection{
+	color: black;
+	background: #fcd770;
+}
+
+.thumbnail{
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.thumbnail:hover{
+    border: 1px solid #fcd770;
+    -webkit-box-shadow: 0 0 6px #fcd770;
+    -moz-box-shadow: 0 0 6px #fcd770;
+    box-shadow: 0 0 6px #fcd770;
+}
+
+u{
+    text-decoration-color: #fcd770;
+}
+
+a{
+    text-decoration-color: none;
+    text-decoration-line: none;
+}
