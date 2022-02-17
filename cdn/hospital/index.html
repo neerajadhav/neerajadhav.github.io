@@ -23,7 +23,7 @@
     data-sidebar-shortcut-enabled="true" data-set-preferred-theme-onload="true">
 
     <!-- Page wrapper start -->
-    <div class="page-wrapper with-navbar with-sidebar" data-sidebar-type="full-height">
+    <div class="page-wrapper with-navbar with-sidebar" data-sidebar-type="overlayed-all">
         <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
 
         <!-- Navbar start -->
@@ -43,32 +43,20 @@
 
 
             <!-- Inline form with input group -->
-            <form class="form-inline ml-auto" action="..." method="..."> 
+            <div class="ml-auto"> 
                 <button class="btn btn-action ml-auto hidden-dm" onclick="halfmoon.toggleDarkMode()" type="button">
                     <span class="material-icons" style="margin-top: 2px;">
                         dark_mode
                     </span>
                     <span class="sr-only">Toggle dark mode</span> <!-- sr-only = show only on screen readers  -->
                 </button>
-                <button class="btn btn-action ml-auto  hidden-lm" onclick="halfmoon.toggleDarkMode()" type="button">
+                <button class="btn btn-action ml-auto hidden-lm" onclick="halfmoon.toggleDarkMode()" type="button">
                     <span class="material-icons" style="margin-top: 2px;">
                         light_mode
                     </span>
                     <span class="sr-only">Toggle dark mode</span> <!-- sr-only = show only on screen readers  -->
                 </button>
-                <!-- ml-auto = margin-left: auto -->
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search docs" required="required">
-                    <div class="input-group-append">
-                        <button class="btn" type="submit">
-                            <span class="material-icons" style="margin-top: 2px;">
-                                search
-                            </span>
-                            <span class="sr-only">Search docs</span> <!-- sr-only = show only on screen readers -->
-                        </button>
-                    </div>
-                </div>
-            </form>
+            </div>
         </nav>
         <!-- Navbar end -->
 
