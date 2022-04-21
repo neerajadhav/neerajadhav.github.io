@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="dark:bg-gray-800">
+
+    <div class="flex">
+
+        <aside class="sidebar w-[250px] md:w-[300px] fixed top-0 h-screen left-[-250px] md:left-0 md:relative z-20 transition duration-150 ease-in-out"
+            aria-label="Sidebar">
+            <div class="overflow-y-auto p-1 md:p-3 bg-gray-50 dark:bg-gray-800 h-full">
+                <div class="flex space-x-3 items-center p-2" onclick="Openbar()">
+                    <div class="space-y-2">
+                        <span class="block w-6 h-0.5 bg-gray-600"></span>
+                        <span class="block w-3 h-0.5 bg-gray-600"></span>
+                        <span class="block w-6 h-0.5 bg-gray-600"></span>
+                    </div>
+                    <div class="logo font-bold text-lg dark:text-white">NOSResume</div>
+                </div>
+                <br>
+                <!--nav for md and up-->
+                <ul class="space-y-2 hidden md:block">
+                    <li>
+                        <a href="#"
+                            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:bg-gray-700 bg-gray-300 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+                            <span class="material-icons mt-1 dark:text-gray-400 text-gray-500">
+                                home
+                            </span>
+                            <span class="flex-1 ml-3 whitespace-nowrap">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+                            <span class="material-icons mt-1 dark:text-gray-400 text-gray-500">
+                                description
+                            </span>
+                            <span class="flex-1 ml-3 whitespace-nowrap">Your Resumes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+                            <span class="material-icons mt-1 dark:text-gray-400 text-gray-500">
+                                favorite
+                            </span>
+                            <span class="flex-1 ml-3 whitespace-nowrap">Saved</span>
+                        </a>
+                    </li>
+                </ul>
+                <!--nav for sm-->
+                <ul class="space-y-2 md:hidden">
+                    <li>
+                        <a href="#"
+                            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:bg-gray-700 bg-gray-300 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+                            <span class="flex-1 ml-3 whitespace-nowrap">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+                            <span class="flex-1 ml-3 whitespace-nowrap">Pricing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700">
+                            <span class="flex-1 ml-3 whitespace-nowrap">Contact</span>
+                        </a>
+                    </li>
+                    <li>
+                        <button
+                            class="w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-800 animate-pulse">Create
+                            a resume</button>
+                    </li>
+                    <li>
+                        <button class="w-full border-2 border-blue-500 dark:text-white p-2 rounded-md">Profile</button>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="w-full bg-red-400 h-screen">
+
+            <!--header for md and up-->
+            <header class="hidden md:block bg-gray-50 dark:text-white dark:bg-gray-800">
+                <div class="flex items-center px-5 py-3 space-x-5 shadow-md">
+                    <nav class="flex space-x-5 items-center">
+                        <a class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:bg-gray-700 bg-gray-300 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-700"
+                            href="#">About</a>
+                        <a class="flex items-center p-2 text-base font-normal rounded-lg hover:bg-gray-300 dark:hover:bg-gray-700"
+                            href="#">Pricing</a>
+                        <a class="flex items-center p-2 text-base font-normal rounded-lg hover:bg-gray-300 dark:hover:bg-gray-700"
+                            href="#">Contact</a>
+                    </nav>
+                    <div class="flex items-center w-full space-x-5">
+                        <button
+                            class="ml-auto bg-blue-600 text-white p-2 rounded-md hover:bg-blue-800 animate-pulse">Create
+                            a
+                            resume</button>
+                        <div>
+                            <span class="material-icons mt-1 dark:text-gray-400 text-gray-500">
+                                account_circle
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!--header for sm-->
+            <header class="md:hidden bg-gray-50 dark:text-white dark:bg-gray-800 p-1">
+                <div class="flex space-x-3 items-center p-2" onclick="Openbar()">
+                    <div class="space-y-2">
+                        <span class="block w-6 h-0.5 bg-gray-600"></span>
+                        <span class="block w-3 h-0.5 bg-gray-600"></span>
+                        <span class="block w-6 h-0.5 bg-gray-600"></span>
+                    </div>
+                    <div class="logo font-bold text-lg dark:text-white">NOSResume</div>
+                </div>
+            </header>
+
+            <main>
+                hello
+            </main>
+
+        </section>
+
+        <footer
+            class="md:hidden fixed text-center flex inset-x-0 bottom-0 bg-gray-50 dark:text-white dark:bg-gray-800 py-1 z-20">
+            <div class="w-1/3">
+                <span
+                    class="material-icons mt-1 dark:text-gray-400 text-gray-500 dark:bg-gray-700 bg-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700 p-1 rounded-lg">
+                    home
+                </span>
+                <br>
+                <small>Home</small>
+            </div>
+            <div class="w-1/3">
+                <span class="material-icons mt-1 dark:text-gray-400 text-gray-500 p-1">
+                    description
+                </span>
+                <br>
+                <small>My Resumes</small>
+            </div>
+            <div class="w-1/3">
+                <span class="material-icons mt-1 dark:text-gray-400 text-gray-500 p-1">
+                    favorite
+                </span>
+                <br>
+                <small>Saved</small>
+            </div>
+        </footer>
+
+        <div class="overlay bg-black opacity-30 fixed top-0 hidden h-screen w-full z-10" onclick="Openbar()"></div>
+
+    </div>
+</body>
+
+<script>
+    function Openbar() {
+      document.querySelector('.sidebar').classList.toggle('left-[-250px]')
+        document.querySelector('.overlay').classList.toggle('hidden')
+    }
+  </script>
+
+</html>
