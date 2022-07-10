@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: biko;
+    src: url(./Biko_Bold.otf) format("truetype");
+}
+
+@font-face {
+    font-family: sans3;
+    src: url(./SourceSans3-Light.otf) format("truetype");
+}
+
+.disable-text-selection{
+    -ms-user-select:none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+     user-select:none;
+}
+
+body{
+    overflow: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+	position: fixed;
+	top: 50%;
+	right: 5px;
+	transform: translateY(-50%);
+    z-index: 10;
+}
+
+.title{
+    width: 85vmin;
+    filter: drop-shadow(3px 3px 3px #00c3ff);
+        -webkit-filter: drop-shadow(3px 3px 3px #00c3ff);
+    margin-left: -20px;
+}
+
+.logo {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+    z-index: 10;
+    width: 100px;
+    filter: drop-shadow(1px 1px 1px #00c3ff);
+        -webkit-filter: drop-shadow(0.5px 0.5px 0.5px #00c3ff);
+}
+
+nav a {
+	border-radius: 50%;
+	display: block;
+	margin: 10px;
+	height: 20px;
+	width: 20px;
+    color: #fff;
+    background-color: rgb(19, 20, 22);
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:nth-child(1) {
+    border: 4px solid #f79533;
+}
+
+nav a:nth-child(2) {
+    border: 4px solid #ef4e7b;
+}
+
+nav a:nth-child(3) {
+    border: 4px solid #5073b8;
+}
+
+nav a:nth-child(4) {
+    border: 4px solid #07b39b;
+}
+
+nav a:nth-child(5) {
+    border: 4px solid #6fba82;
+}
+
+aside {
+	position: fixed;
+	bottom: 10px;
+	right: 5px;
+    z-index: 10;
+}
+
+aside a {
+	/* border: 2px solid white; */
+	border-radius: 100%;
+	display: block;
+	padding: 5px;
+    margin: 10px;
+	height: 20px;
+    width: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#about, aside a:nth-of-type(1) {
+	background-color: rgb(68, 68, 248);
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* overflow: auto; */
+    overflow: hidden;
+    margin: auto auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.container .section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    background-blend-mode: multiply;
+}
+
+.header{
+    color: aliceblue;
+    font-size: 2.5vmax;
+    text-shadow: 1.5px 1.5px 1.5px #000;
+    font-family: 'biko';
+    margin-top: 30px;
+}
+
+.content{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 70%;
+    color: aliceblue;
+    padding: 20px;
+    font-size: 2.5vmax;
+    text-shadow: 1.5px 1.5px 1.5px #000;
+    font-family: 'sans3';
+}
+
+.read-btn{
+    font-size: 15px;
+    color: #fff;
+    background-color: black;
+    border: 0px;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.read-btn {
+    width: 150px;
+    height:50px;
+    border-radius:180px;
+    position:relative;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    cursor:pointer;
+    line-height:12px;
+  }
+  
+  .read-btn:before{
+    content:'';
+    z-index:1;
+    position:absolute;
+    display:block;
+    width:80%;
+    height:70%;
+    top:15%;
+    left:10%;
+    transition: 0.3s opacity ease-in-out;
+    filter:blur(15px);
+    opacity:0;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  }
+  
+  .read-btn:hover:before {
+    opacity:1;
+    transition: 0.3s opacity ease-in-out;
+    filter:blur(25px);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);  
+  }
+  
+  .read-btn:after {
+    content:'Read More';
+    text-align:center;
+    line-height:40px;
+    font-size:18px;
+    color:rgba(235,235,235,1);
+    font-weight:bold;
+    z-index:5;
+    position:absolute;
+    display:block;
+    border-radius:180px;
+    width:92%;
+    height:80%;
+    top:10%;
+    left:4%;  
+    background-color:rgb(19, 20, 22);
+  }

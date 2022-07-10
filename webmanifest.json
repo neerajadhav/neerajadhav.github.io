@@ -1,0 +1,21 @@
+{
+  "short_name": "Neeraj",
+  "name": "Neeraj Adhav",
+  "icons": [
+    {
+      "src": "N-icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+        "src": "N-icon.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+  ],
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ffffff"
+}
