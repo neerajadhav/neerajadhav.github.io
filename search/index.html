@@ -1,7 +1,7 @@
 <!doctype html><html lang=en-us>
 <head>
 <meta charset=utf-8>
-<title>Tags</title>
+<title>Search Result</title>
 <meta property="og:image" content="http://neerajadhav.github.io">
 <meta name=author content="Neeraj">
 <meta name=description content>
@@ -43,7 +43,7 @@
 <li class=nav-item>
 <a class=nav-link href=https://neerajadhav.in/series/><i class="las la-lg la-stream"></i> &nbsp;Series</a>
 </li>
-<li class="nav-item active">
+<li class=nav-item>
 <a class=nav-link href=https://neerajadhav.in/tags/><i class="las la-lg la-tags"></i> &nbsp;Tags</a>
 </li>
 <li class=nav-item>
@@ -73,44 +73,48 @@
 <input id=search-query name=s type=search placeholder="Type words & hit enter" class=text-center aria-label=search-query>
 </form>
 </div>
-<section class="section-sm pb-2 page-header">
-<div class=container>
+<section class=section>
+<div class="col-md-6 mx-auto">
 <div class=row>
-<div class="col-8 mx-auto text-center">
-<h3 class="mb-3 text-dark font-weight-bold">Tags</h3>
-<ul class="list-inline breadcrumb-menu">
-<li class=list-inline-item><a href=/>Home</a></li>
-<li class=list-inline-item>/ &nbsp; <a href=https://neerajadhav.in/tags>Tags</a></li>
-</ul>
+<div class="col-12 mb-5">
+<div class=title-bordered>
+<h1 class=h3>Search results for
+<span class=mark>
+<script>var keyword=window.location.search.substr(3),result=keyword.replace("+"," ");document.write(result)</script>
+</span>
+</h1>
 </div>
 </div>
-</div>
-</section>
-<section class=section-sm>
-<div class=container>
-<div class="row justify-content-center text-center">
 <div class=col-12>
-<ul class="list-inline taxonomies-list">
-<li class="list-inline-item mb-1">
-<a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href=/tags/abacus/><i class="las la-tags mr-1"></i> Abacus (1)</a>
-</li>
-<li class="list-inline-item mb-1">
-<a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href=/tags/first-computer/><i class="las la-tags mr-1"></i> First Computer (1)</a>
-</li>
-<li class="list-inline-item mb-1">
-<a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href=/tags/first-year/><i class="las la-tags mr-1"></i> First Year (1)</a>
-</li>
-<li class="list-inline-item mb-1">
-<a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href=/tags/reopencollege/><i class="las la-tags mr-1"></i> reopencollege (1)</a>
-</li>
-<li class="list-inline-item mb-1">
-<a class="h5 px-4 py-3 rounded bg-light d-block font-weight-700" href=/tags/second-year/><i class="las la-tags mr-1"></i> Second Year (1)</a>
-</li>
-</ul>
+<div class=row id=search-results></div>
+<div class=row>
+<script id=search-result-template type=text/x-js-template>
+            <div class="col-12 mb-3">
+              <article class="card post-card" id="summary-${key}">
+                <div class="row">
+                  <div class="col-4">
+                    <a class="post-title" href="${link}">
+                      ${ isset image }<img loading="lazy" class="img-fluid rounded" src="https://neerajadhav.in/${image}" alt="${title}">${end}
+                    </a>
+                  </div>
+                  <div class="col-8">
+                    <h5 class="mb-4">
+                    <a class="post-title" href="${link}">${title}</a>
+                    </h5>
+                    <small>
+                      <a class="post-title text-muted" href="${link}">${series}</a><br>
+                    </small>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </script>
+</div>
 </div>
 </div>
 </div>
 </section>
+<script>var indexURL="https://neerajadhav.in/index.json"</script>
 <footer class=section-sm id=subscribe>
 <div class=container>
 <div class="row justify-content-center align-items-center">
@@ -180,7 +184,7 @@ By subscribing, you agree with Revue’s <a class=text-primary target=_blank hre
 </div>
 <div class=mobile-bottom-nav__item>
 <a href=https://neerajadhav.in/tags/>
-<div class="mobile-bottom-nav__item-content text-primary">
+<div class=mobile-bottom-nav__item-content>
 <i class="las la-lg la-tags"></i>
 <small>Tags</small>
 </div>
