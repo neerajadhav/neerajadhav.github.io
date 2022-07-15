@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="mango.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Form</title>
+</head>
+
+<body>
+    <header class="bg-white px-3 border-bottom position-sticky">
+        <div class="container">
+            <a class="text-body" href="/">
+                <img src="mango.png" alt="logo" class="img-fluid my-2" style="height: 40px;">
+                <b>Resumango</b>
+            </a>
+
+            <div class="dropdown" style="float: right;">
+                <a class="" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="user.png" alt="logo" class="img-fluid my-2" style="height: 40px">
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="/login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="/form.html">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <header class="bg-white py-3 border border-top-0 border-bottom-0">
+                <div class="container">
+                    <a class="btn btn-sm btn-outline-secondary" href="index.html">
+                        &#10094; Back
+                    </a>
+                    <div style="float: right;">
+                        <a class="btn btn-sm btn-outline-primary" href="#">
+                            Save
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="bg-white border col-md-6 col-lg-4 py-3">
+                <p><b>Personal Details</b></p>
+                <form>
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" class="form-control" placeholder="Username" />
+                    </div>
+                    <div class="input-group mb-4">
+                        <input type="text" class="form-control" placeholder="First Name" />
+                        <input type="text" class="form-control" placeholder="Last Name" />
+                    </div>
+                    <div class="form-outline mb-4">
+                        <input type="email" class="form-control" placeholder="Email" />
+                    </div>
+                    <div class="form-outline mb-4">
+                        <input class="form-control" type="tel" placeholder="Mobile Number">
+                    </div>
+
+                </form>
+            </div>
+
+            <!--Education-->
+            <div class="bg-white border col-md-6 col-lg-4 py-3">
+                <p><b>Education</b></p>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-start p-0 pt-3">
+                        <div class="ms-2 me-auto">
+                            <small class="text-muted" style="word-wrap: break-word;">
+                                <b>Bachelor of Engineering (B.E), Computer Science & Engineering</b>
+                                <p>SITRC Sandip | Foundation 2021 - 2024 | CGPA: 9.00/10</p>
+                            </small>
+                        </div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#educationModal"
+                            class="btn text-primary rounded-pill btn-sm">
+                            &#9998;
+                        </a>
+                        <a href="#" class="btn text-danger rounded-pill btn-sm">
+                            &#10005;
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Button trigger modal -->
+                <div class="btn col-primary btn-sm px-0">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#educationModal">+ Add education</a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal" id="educationModal" tabindex="-1" aria-labelledby="educationModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title" id="educationModalLabel">Education</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ....
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-sm btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Jobs-->
+            <div class="bg-white border col-md-6 col-lg-4 py-3">
+                <p><b>Jobs</b></p>
+
+                <!-- Button trigger modal -->
+                <div class="btn col-primary btn-sm px-0">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#jobsModal">+ Add job</a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal" id="jobsModal" tabindex="-1" aria-labelledby="jobsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title" id="jobsModalLabel">Job</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Profile</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Operations">
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Organization</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Google">
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Location</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Mumbai">
+                                    </div>
+
+                                    <div class="form-check mb-3">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Is Work From Home</label>
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <div class="form-control border-0">
+                                            <label class="mb-1">Start Date</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                        <div class="form-control border-0">
+                                            <label class="mb-1">End Date</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <small class="card mb-3 p-3">
+                                            <b>Pro tip:</b>
+                                            <ul>
+                                                <li>Mention key job responsibilities, measurable impact or results you helped deliver, any awards/recognition you won during this time</li>
+                                                <li>Use action verbs: Built, Led, Drove, Conceptualized, Learnt, etc.</li>
+                                                <li>Use numbers and percentages wherever possible</li>
+                                                <li>Keep it to 3-4 points</li>
+                                            </ul>
+                                        </small>
+                                        <label class="mb-1">Description</label>
+                                        <textarea class="form-control" rows="5" placeholder="Short description of work done (max 250 char)" maxlength="250"></textarea>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-sm btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Internships-->
+            <div class="bg-white border col-md-6 col-lg-4 py-3">
+                <p><b>Internships</b></p>
+
+                <!-- Button trigger modal -->
+                <div class="btn col-primary btn-sm px-0">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#internshipModal">+ Add internship</a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal" id="internshipModal" tabindex="-1" aria-labelledby="internshipModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title" id="internshipModalLabel">Internship</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Profile</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Operations">
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Organization</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Google">
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Location</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Mumbai">
+                                    </div>
+
+                                    <div class="form-check mb-3">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Is Work From Home</label>
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <div class="form-control border-0">
+                                            <label class="mb-1">Start Date</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                        <div class="form-control border-0">
+                                            <label class="mb-1">End Date</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <small class="card mb-3 p-3">
+                                            <b>Pro tip:</b>
+                                            <ul>
+                                                <li>Mention key internship responsibilities in max 3-4 points</li>
+                                                <li>Use action verbs: Built, Led, Drove, Conceptualized, Learnt, etc.</li>
+                                            </ul>
+                                        </small>
+                                        <label class="mb-1">Description</label>
+                                        <textarea class="form-control" rows="5" placeholder="Short description of work done (max 250 char)" maxlength="250"></textarea>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-sm btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Positions of Responsibiity-->
+            <div class="bg-white border col-md-6 col-lg-4 py-3">
+                <p><b>Positions of Responsibiity</b></p>
+
+                <ol class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-start p-0 pt-3">
+                        <div class="ms-2 me-auto">
+                            <small class="text-muted" style="word-wrap: break-word;">
+                                <p>I have led a team of 4 members in a hackathon DEVELOPERS HACKS-21, organized by GDSC,
+                                    AISSMS IOIT from 16/09 to 12/10, 2021. The link to the certificate is attached
+                                    below.<br>
+                                    <a
+                                        href="https://drive.google.com/file/d/1Wvabs8P8u_xVNFY7OU8p5OQR7kcJPGBu/view">link</a>
+                                </p>
+                            </small>
+                        </div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#positionsModal"
+                            class="btn text-primary rounded-pill btn-sm">
+                            &#9998;
+                        </a>
+                        <a href="#" class="btn text-danger rounded-pill btn-sm">
+                            &#10005;
+                        </a>
+                    </li>
+                </ol>
+
+                <!-- Button trigger modal -->
+                <div class="btn col-primary btn-sm px-0">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#positionsModal">+ Add position of
+                        responsibiity</a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal" id="positionsModal" tabindex="-1" aria-labelledby="positionsModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title" id="positionsModalLabel">Position of Responsibiity</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+
+                                    <div class="form-group">
+                                        <small class="card mb-3 p-3 text-muted">
+                                            <p>If you have been/are an active part of societies, conducted any events or led a team, add details here</p>
+                                        </small>
+                                        <label class="mb-1">Description</label>
+                                        <textarea class="form-control" rows="5" placeholder="e.g. Led a team of 5 volunteers to plan and conduct activities for literary event in college fest
+                                        " maxlength="250"></textarea>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-sm btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Academic/Personal Projects-->
+            <div class="bg-white border col-md-6 col-lg-4 py-3">
+                <p><b>Academic/Personal Projects</b></p>
+
+                <ol class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-start p-0 pt-3">
+                        <div class="ms-2 me-auto">
+                            <small class="text-muted" style="word-wrap: break-word;">
+                                <b>DEVELOPERS HACKS-21, organized by GDSC, AISSMS IOIT</b>
+                                <p>Sep 2021 - Oct 2021<br>
+                                    <a href="https://github.com/neerajadhav/AgroMedia">link</a>
+                                </p>
+                            </small>
+                        </div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#projectsModal"
+                            class="btn text-primary rounded-pill btn-sm">
+                            &#9998;
+                        </a>
+                        <a href="#" class="btn text-danger rounded-pill btn-sm">
+                            &#10005;
+                        </a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start p-0 pt-3">
+                        <div class="ms-2 me-auto">
+                            <small class="text-muted" style="word-wrap: break-word;">
+                                <b>Martian City - Project Based Learning 2021</b>
+                                <p>Jun 2021 - Jul 2021<br>
+                                    <a href="https://github.com/martiancity/martiancity.github.io">link</a>
+                                </p>
+                            </small>
+                        </div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#projectsModal"
+                            class="btn text-primary rounded-pill btn-sm">
+                            &#9998;
+                        </a>
+                        <a href="#" class="btn text-danger rounded-pill btn-sm">
+                            &#10005;
+                        </a>
+                    </li>
+                </ol>
+
+                <!-- Button trigger modal -->
+                <div class="btn col-primary btn-sm px-0">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#projectsModal">+ Add academic/personal
+                        project</a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal" id="projectsModal" tabindex="-1" aria-labelledby="projectsModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title" id="projectsModalLabel">Academic/Personal Project</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Title</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Optical Character Recognition">
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <div class="form-control border-0">
+                                            <label class="mb-1">Start Date</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                        <div class="form-control border-0">
+                                            <label class="mb-1">End Date</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Description</label>
+                                        <textarea class="form-control" rows="5" placeholder="Short description of your project (max 250 char)" maxlength="250"></textarea>
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Project link</label>
+                                        <input type="text" class="form-control" placeholder="e.g. http://myprojectlink.com">
+                                        <small class="text-muted">If you have multiple project links or an offline project, upload and provide link to google drive</small>
+                                    </div>
+
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-sm btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Training/Courses-->
+            <div class="bg-white border col-md-6 col-lg-4 py-3">
+                <p><b>Training/Courses</b></p>
+
+                <ol class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-start p-0 pt-3">
+                        <div class="ms-2 me-auto">
+                            <small class="text-muted" style="word-wrap: break-word;">
+                                <b>Machine Learning</b>
+                                <p>Knowledge Solutions India, Online<br>
+                                    May 2021 - Jun 2021<br>
+                                    A summer training & internship of 6 weeks on MACHINE LEARNING WITH AI USING PYTHON
+                                </p>
+                            </small>
+                        </div>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#trainingModal"
+                            class="btn text-primary rounded-pill btn-sm">
+                            &#9998;
+                        </a>
+                        <a href="#" class="btn text-danger rounded-pill btn-sm">
+                            &#10005;
+                        </a>
+                    </li>
+                </ol>
+
+                <!-- Button trigger modal -->
+                <div class="btn col-primary btn-sm px-0">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#trainingModal">+ Add training/course</a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal" id="trainingModal" tabindex="-1" aria-labelledby="trainingModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title" id="trainingModalLabel">Training/Course</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Training program</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Analytics">
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Organization</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Google 30 days of cloud">
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Location</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Mumbai">
+                                    </div>
+
+                                    <div class="form-check mb-3">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Online</label>
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <div class="form-control border-0">
+                                            <label class="mb-1">Start Date</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                        <div class="form-control border-0">
+                                            <label class="mb-1">End Date</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="mb-1">Description</label>
+                                        <textarea class="form-control" rows="5" placeholder="Short description about training (max 250 char)" maxlength="250"></textarea>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-sm btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Skills-->
+            <div class="bg-white border col-md-6 col-lg-4 py-3">
+                <p><b>Skills</b></p>
+
+                <ol class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-start p-0 pt-3">
+                        <small class="ms-2 me-auto">
+                            <div class="text-muted" style="word-wrap: break-word;">
+                                <b>Adobe Photoshop</b>
+                                <p>
+                                    Intermediate
+                                </p>
+                            </div>
+                        </small>
+                        <a href="#" class="btn text-danger rounded-pill btn-sm">
+                            &#10005;
+                        </a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start p-0 pt-3">
+                        <small class="ms-2 me-auto">
+                            <div class="text-muted" style="word-wrap: break-word;">
+                                <b>GitHub</b>
+                                <p>
+                                    Intermediate
+                                </p>
+                            </div>
+                        </small>
+                        <a href="#" class="btn text-danger rounded-pill btn-sm">
+                            &#10005;
+                        </a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start p-0 pt-3">
+                        <small class="ms-2 me-auto">
+                            <div class="text-muted" style="word-wrap: break-word;">
+                                <b>Adobe XD</b>
+                                <p>
+                                    Intermediate
+                                </p>
+                            </div>
+                        </small>
+                        <a href="#" class="btn text-danger rounded-pill btn-sm">
+                            &#10005;
+                        </a>
+                    </li>
+                </ol>
+
+                <!-- Button trigger modal -->
+                <div class="btn col-primary btn-sm px-0">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#skillsModal">+ Add skill</a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal" id="skillsModal" tabindex="-1" aria-labelledby="skillsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title" id="skillsModalLabel">Skill</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Skill</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Photoshop">
+                                    </div>
+                                    
+                                    <select class="form-select" aria-label="rate">
+                                        <option selected disabled>Rate yourself on this skill</option>
+                                        <option value="1">Biginner</option>
+                                        <option value="2">Intermediate</option>
+                                        <option value="3">Advanced</option>
+                                    </select>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-sm btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--Portfilio/Work Samples-->
+            <div class="bg-white border col-md-6 col-lg-4 py-3">
+                <p><b>Portfilio/Work Samples</b></p>
+
+
+                <ol class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-start p-0 pt-3">
+                        <small class="ms-2 me-auto">
+                            <div class="text-muted" style="word-wrap: break-word;">
+                                <b>GitHub profile</b><br>
+                                <p><a href="https://github.com/neerajadhav">link</a></p>
+                            </div>
+                        </small>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                            class="btn text-primary rounded-pill btn-sm">
+                            &#9998;
+                        </a>
+                        <a href="#" class="btn text-danger rounded-pill btn-sm">
+                            &#10005;
+                        </a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start p-0 pt-3">
+                        <small class="ms-2 me-auto">
+                            <div class="text-muted" style="word-wrap: break-word;">
+                                <b>Blog link</b><br>
+                                <p><a href="https://neerajsays.hashnode.dev/">link</a></p>
+                            </div>
+                        </small>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal"
+                            class="btn text-primary rounded-pill btn-sm">
+                            &#9998;
+                        </a>
+                        <a href="#" class="btn text-danger rounded-pill btn-sm">
+                            &#10005;
+                        </a>
+                    </li>
+                </ol>
+
+                <!-- Button trigger modal -->
+                <div class="btn col-primary btn-sm px-0">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#portfolioModal">+ Add portfolio/work sample</a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title" id="portfolioModalLabel">Portfolio/Work Samples</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Blog link</label>
+                                        <input type="text" class="form-control" placeholder="e.g. http://myblog.com">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">GitHub profile</label>
+                                        <input type="text" class="form-control" placeholder="e.g. http://github.com/username">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Play store developer A/C (public link)</label>
+                                        <input type="text" class="form-control" placeholder="e.g. http://play.google.com/store/apps/developer?id=myapps
+                                        ">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Behance portfolio link</label>
+                                        <input type="text" class="form-control" placeholder="e.g. http://behance.net/my_profile
+                                        ">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label class="mb-1">Other work sample link</label>
+                                        <small class="text-muted"><p>Your work samples could be in the form of social media posts, presentations, documents, website etc. If you have multiple work samples, upload them to google drive and add the link here.</p></small>
+                                        <input type="text" class="form-control" placeholder="e.g. https://myworksample.com
+                                        ">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-sm btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--Achievement/Additional Detail-->
+            <div class="bg-white border col-md-6 col-lg-4 py-3">
+                <p><b>Achievements/Additonal Details</b></p>
+
+                <!-- Button trigger modal -->
+                <div class="btn col-primary btn-sm px-0">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#additionalModal">+ Add achievement/additional
+                        detail</a>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal" id="additionalModal" tabindex="-1" aria-labelledby="additionalModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title" id="additionalModalLabel">Achievement/Additional Detail</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <small class="card mb-3 p-3">
+                                            <p>
+                                                Add your accomplishments such as rewards, recognitions, test scores, certifications, etc. here. You may also add information such as seminars/workshops you have attended or any interests/hobbies you have pursued.
+                                            </p>
+                                        </small>
+                                        <textarea class="form-control" rows="5" placeholder="E.g. Secured 1st rank among 500 entries in national level story writing competition organised by Internshala.
+                                        " maxlength="250"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-sm btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-sm btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src=https://use.fontawesome.com/aef602c7ec.js></script>
+</body>
+
+</html>
