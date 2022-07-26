@@ -670,10 +670,6 @@ video {
   margin-top: 0px;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -718,26 +714,6 @@ video {
   height: 0.75rem;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
-.h-56 {
-  height: 14rem;
-}
-
-.h-52 {
-  height: 13rem;
-}
-
-.h-\[15rem\] {
-  height: 15rem;
-}
-
-.h-\[14rem\] {
-  height: 14rem;
-}
-
 .h-\[200px\] {
   height: 200px;
 }
@@ -778,10 +754,6 @@ video {
   width: 50%;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
 .max-w-xs {
   max-width: 20rem;
 }
@@ -792,10 +764,6 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
@@ -844,12 +812,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -935,22 +897,12 @@ video {
   background-color: rgb(191 219 254 / var(--tw-bg-opacity));
 }
 
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
 }
 
 .bg-cover {
   background-size: cover;
-}
-
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .object-cover {
@@ -991,11 +943,6 @@ video {
   padding-right: 0.5rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1004,12 +951,12 @@ video {
   padding-right: 0.75rem;
 }
 
-.pr-1 {
-  padding-right: 0.25rem;
-}
-
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pr-1 {
+  padding-right: 0.25rem;
 }
 
 .text-center {
@@ -1045,14 +992,6 @@ video {
 
 .font-medium {
   font-weight: 500;
-}
-
-.font-light {
-  font-weight: 300;
-}
-
-.font-thin {
-  font-weight: 100;
 }
 
 .text-gray-600 {
@@ -1144,11 +1083,6 @@ video {
     border-bottom-width: 1px;
   }
 
-  .md\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -1164,9 +1098,5 @@ video {
 @media (min-width: 1024px) {
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
