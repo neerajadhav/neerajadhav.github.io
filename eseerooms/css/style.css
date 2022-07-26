@@ -888,6 +888,18 @@ video {
   width: 1.5rem;
 }
 
+.w-4\/6 {
+  width: 66.666667%;
+}
+
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
+}
+
 .max-w-xs {
   max-width: 20rem;
 }
@@ -1187,6 +1199,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
