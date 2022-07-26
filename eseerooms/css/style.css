@@ -1498,6 +1498,10 @@ video {
     justify-content: space-between;
   }
 
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
