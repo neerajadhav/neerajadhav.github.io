@@ -11,7 +11,7 @@ function openMenu() {
     closeIcon.classList.remove('hidden');
     overlay.classList.remove('hidden');
     header.classList.remove('md:bg-white');
-    header.classList.add('bg-white');
+    // header.classList.add('bg-white');
 }
 
 function closeMenu() {
@@ -21,5 +21,5 @@ function closeMenu() {
     closeIcon.classList.add('hidden');
     overlay.classList.add('hidden');
     header.classList.add('md:bg-white');
-    header.classList.remove('bg-white');
+    // header.classList.remove('bg-white');
 }
