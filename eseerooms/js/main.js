@@ -18,7 +18,7 @@ function openMenu() {
 
 function closeMenu() {
     sideMenu.classList.remove('right-0');
-    sideMenu.classList.remove('top-[67px]');
+    sideMenu.classList.remove('top-[66px]');
     sideMenu.classList.add('right-[-250px]');
     sideMenu.classList.add('top-[-250px]');
     openIcon.classList.remove('hidden');
