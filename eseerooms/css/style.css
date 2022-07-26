@@ -730,6 +730,18 @@ video {
   height: 13rem;
 }
 
+.h-\[15rem\] {
+  height: 15rem;
+}
+
+.h-\[14rem\] {
+  height: 14rem;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
 .w-16 {
   width: 4rem;
 }
@@ -994,6 +1006,10 @@ video {
 
 .pr-1 {
   padding-right: 0.25rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .text-center {
