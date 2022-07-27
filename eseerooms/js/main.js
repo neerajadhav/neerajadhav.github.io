@@ -7,7 +7,7 @@ var header = document.getElementById('header');
 function openMenu() {
     sideMenu.classList.remove('right-[-250px]');
     sideMenu.classList.remove('top-[-250px]');
-    sideMenu.classList.add('right-[10px]');
+    sideMenu.classList.add('right-[15px]');
     sideMenu.classList.add('top-[80px]');
     openIcon.classList.add('hidden');
     closeIcon.classList.remove('hidden');
@@ -17,7 +17,7 @@ function openMenu() {
 }
 
 function closeMenu() {
-    sideMenu.classList.remove('right-[10px]');
+    sideMenu.classList.remove('right-[15px]');
     sideMenu.classList.remove('top-[80px]');
     sideMenu.classList.add('right-[-250px]');
     sideMenu.classList.add('top-[-250px]');
