@@ -52,5 +52,5 @@ function getOS() {
 }
 
 if (getOS() == "Windows") {
-    document.body.style.zoom = "75%"
+    document.body.style.zoom = "80%"
 }
