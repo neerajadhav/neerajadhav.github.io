@@ -798,16 +798,8 @@ video {
   height: 300px;
 }
 
-.h-\[25px\] {
-  height: 25px;
-}
-
-.h-\[20Spx\] {
-  height: 20Spx;
-}
-
-.h-\[20px\] {
-  height: 20px;
+.h-\[500px\] {
+  height: 500px;
 }
 
 .w-full {
@@ -872,6 +864,14 @@ video {
 
 .w-1\/4 {
   width: 25%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .max-w-xs {
@@ -1127,10 +1127,6 @@ video {
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-1 {
-  padding: 0.25rem;
 }
 
 .py-3 {
