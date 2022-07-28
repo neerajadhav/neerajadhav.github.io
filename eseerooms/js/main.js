@@ -27,3 +27,6 @@ function closeMenu() {
     header.classList.add('md:bg-white');
     // header.classList.remove('bg-white');
 }
+
+
+document.body.style.zoom = "75%"
