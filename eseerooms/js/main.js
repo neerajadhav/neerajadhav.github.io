@@ -29,4 +29,14 @@ function closeMenu() {
 }
 
 
-document.body.style.zoom = "75%"
+let userAgent = navigator.userAgent;
+let browserName;
+
+if (userAgent.match(/chrome|chromium|crios/i)) {
+    browserName = "chrome";
+}
+
+if (browserName == "chrome") {
+    document.body.style.zoom = "75%"
+
+}
