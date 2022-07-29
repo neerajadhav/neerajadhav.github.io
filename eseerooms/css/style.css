@@ -1320,6 +1320,10 @@ video {
     margin-top: 80px;
   }
 
+  .md\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
   .md\:block {
     display: block;
   }
