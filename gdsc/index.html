@@ -22,11 +22,11 @@
         <div class="header-wrapper container mx-auto">
             <header><div class="flex items-center justify-between">
     <div class="left-trigger lg:hidden">
-        <button onclick="leftopen()" class="px-3 py-2 m-2 rounded shadow border">
+        <button onclick="leftopen()" class="px-3 py-2 my-3 mx-5 rounded shadow border">
             <i class="fa fa-bars"></i>
         </button>
     </div>
-    <div class="logo mx-auto py-2">
+    <div class="logo mx-auto lg:ml-0 py-3">
         
         <div class="flex items-center space-x-3">
             <h1 class="font-bold">GDSC</h1>
@@ -35,8 +35,13 @@
         </div>
     </div>
     <div class="left-trigger lg:hidden">
-        <button onclick="rightopen()" class="px-3 py-2 m-2 rounded shadow border">
+        <button onclick="rightopen()" class="px-3 py-2 my-2 mx-5 rounded shadow border">
             <i class="fa fa-bars"></i>
+        </button>
+    </div>
+    <div class="left-trigger fixed bottom-0 right-0 m-5 lg:m-0 lg:static">
+        <button class="px-4 py-3 lg:px-3 lg:py-2 lg:my-2 rounded shadow bg-blue-600 text-white">
+            <i class="fa fa-user-plus"></i>
         </button>
     </div>
 </div></header>
@@ -45,7 +50,7 @@
     <div class="wrapper w-full">
         <div class="content-wrapper flex mx-auto justify-between container">
             <div id="leftoverlay" class="overlay bg-black opacity-50 fixed w-full h-screen z-40 top-0 left-0 hidden lg:hidden" onclick="leftover()"></div>
-            <div id="leftaside" class="left-aside lg:block w-[300px] lg:w-[520px] h-screen lg:h-[90vh] lg:sticky fixed z-50 left-[-300px] top-0 lg:top-[56px] duration-300 bg-white lg:bg-transparent"><div class="w-full h-full lg:border rounded-lg bg-white absolute lg:my-5" id="sidenavSecExample">
+            <div id="leftaside" class="left-aside lg:block w-[300px] lg:w-[520px] h-screen lg:h-[90vh] lg:sticky fixed z-50 left-[-300px] top-0 lg:top-[64px] duration-300 bg-white lg:bg-transparent"><div class="w-full h-full lg:border rounded-lg bg-white absolute lg:my-5" id="sidenavSecExample">
     <div class="pt-4 pb-2 px-6">
       <a href="#!">
         <div class="flex items-center">
@@ -164,7 +169,7 @@
             <div class="content w-full">
 <section class="text-gray-600 body-font">
     <div class="container mx-auto flex px-5 pt-5 pb-20 items-center justify-center flex-col">
-        <img class="lg:w-5/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
+        <img class="w-full mb-10 object-cover object-center rounded" alt="hero"
             src="https://dummyimage.com/1920x1080">
         <div class="text-center lg:w-2/3 w-full">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Microdosing synth tattooed
@@ -304,7 +309,7 @@
             class="flex mx-auto mt-20 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
     </div>
 </section>
-<hr><footer class="text-gray-600 body-font">
+<footer class="text-gray-600 body-font">
     <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
@@ -354,7 +359,7 @@
 </footer></div>
 
             <div id="rightoverlay" class="overlay bg-black opacity-50 fixed w-full h-screen z-40 top-0 right-0 hidden lg:hidden" onclick="rightover()"></div>
-            <div id="rightaside" class="right-aside lg:block w-[300px] lg:w-[520px] h-screen lg:h-[90vh] lg:sticky fixed z-50 right-[-300px] top-0 lg:top-[56px] duration-300 bg-white lg:bg-transparent"><div class="w-full lg:border rounded-lg bg-white lg:my-5" id="sidenavSecExample">
+            <div id="rightaside" class="right-aside lg:block w-[300px] lg:w-[520px] h-screen lg:h-[90vh] lg:sticky fixed z-50 right-[-300px] top-0 lg:top-[64px] duration-300 bg-white lg:bg-transparent"><div class="w-full lg:border rounded-lg bg-white lg:my-5" id="sidenavSecExample">
     <ul class="relative px-1">
         <li class="relative">
             <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out"
