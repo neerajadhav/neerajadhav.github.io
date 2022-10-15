@@ -20,9 +20,11 @@
 </head><body>
     <div class="wrapper w-full bg-white z-30 sticky top-0">
         <div class="header-wrapper container mx-auto">
-            <header><div class="flex justify-between">
+            <header><div class="flex items-center justify-between">
     <div class="left-trigger lg:hidden">
-        <button onclick="leftopen()">Menu</button>
+        <button onclick="leftopen()" class="px-3 py-2 m-2 rounded shadow border">
+            <i class="fa fa-bars"></i>
+        </button>
     </div>
     <div class="logo mx-auto">
         
@@ -32,9 +34,9 @@
             <h1 class="text-2xl">SITRC</h1>
         </div>
     </div>
-    <div class="right-trigger lg:hidden">
-        <button onclick="rightopen()">Menu</button>
-    </div>
+    <button onclick="rightopen()" class="px-3 py-2 m-2 rounded shadow border">
+        <i class="fa fa-bars"></i>
+    </button>
 </div></header>
         </div>
     </div>
