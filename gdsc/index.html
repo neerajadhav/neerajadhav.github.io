@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head><body>
-    <div class="wrapper w-full bg-white z-30 sticky top-0">
+    <div class="wrapper w-full bg-white shadow z-30 sticky top-0">
         <div class="header-wrapper container mx-auto">
             <header><div class="flex items-center justify-between">
     <div class="left-trigger lg:hidden">
@@ -26,31 +26,495 @@
             <i class="fa fa-bars"></i>
         </button>
     </div>
-    <div class="logo mx-auto">
+    <div class="logo mx-auto py-2">
         
         <div class="flex items-center space-x-3">
-            <h1>GDSC</h1>
+            <h1 class="font-bold">GDSC</h1>
             <img src="https://neerajadhav.in/gdsc/img/logo.png" alt="logo" class="w-10">
-            <h1>SITRC</h1>
+            <h1 class="font-bold">SITRC</h1>
         </div>
     </div>
-    <button onclick="rightopen()" class="px-3 py-2 m-2 rounded shadow border">
-        <i class="fa fa-bars"></i>
-    </button>
+    <div class="left-trigger lg:hidden">
+        <button onclick="rightopen()" class="px-3 py-2 m-2 rounded shadow border">
+            <i class="fa fa-bars"></i>
+        </button>
+    </div>
 </div></header>
         </div>
     </div>
-    <div class="wrapper w-full bg-black">
-        <div class="content-wrapper flex mx-auto justify-between bg-yellow-500 container">
+    <div class="wrapper w-full">
+        <div class="content-wrapper flex mx-auto justify-between container">
             <div id="leftoverlay" class="overlay bg-black opacity-50 fixed w-full h-screen z-40 top-0 left-0 hidden lg:hidden" onclick="leftover()"></div>
-            <div id="leftaside" class="left-aside lg:block w-[300px] lg:w-[520px] bg-red-500 h-screen lg:h-[90vh] lg:sticky fixed z-50 left-[-300px] top-0 lg:top-[48px] duration-300">left</div>
+            <div id="leftaside" class="left-aside lg:block w-[300px] lg:w-[520px] h-screen lg:h-[90vh] lg:sticky fixed z-50 left-[-300px] top-0 lg:top-[56px] duration-300 bg-white lg:bg-transparent"><div class="w-full h-full lg:border rounded-lg bg-white absolute lg:my-5" id="sidenavSecExample">
+    <div class="pt-4 pb-2 px-6">
+      <a href="#!">
+        <div class="flex items-center">
+          <div class="shrink-0">
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" class="rounded-full w-10" alt="Avatar">
+          </div>
+          <div class="grow ml-3">
+            <p class="text-sm font-semibold text-blue-600">Jason McCoel</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <ul class="relative px-1">
+      <li class="relative">
+        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 mr-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor" d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"></path>
+          </svg>
+          <span>Non-collapsible link</span>
+        </a>
+      </li>
+      <li class="relative" id="sidenavSecEx2">
+        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer" data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse" data-bs-target="#collapseSidenavSecEx2" aria-expanded="false" aria-controls="collapseSidenavSecEx2">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 mr-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+            <path fill="currentColor" d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"></path>
+          </svg>
+          <span>Collapsible item 1</span>
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+          </svg>
+        </a>
+        <ul class="relative accordion-collapse collapse" id="collapseSidenavSecEx2" aria-labelledby="sidenavSecEx2" data-bs-parent="#sidenavSecExample">
+          <li class="relative">
+            <a href="#!" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 1</a>
+          </li>
+          <li class="relative">
+            <a href="#!" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 2</a>
+          </li>
+        </ul>
+      </li>
+      <li class="relative" id="sidenavSecEx3">
+        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer" data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse" data-bs-target="#collapseSidenavSecEx3" aria-expanded="false" aria-controls="collapseSidenavSecEx3">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 mr-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor" d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z"></path>
+          </svg>
+          <span>Collapsible item 2</span>
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+          </svg>
+        </a>
+        <ul class="relative accordion-collapse collapse" id="collapseSidenavSecEx3" aria-labelledby="sidenavSecEx3" data-bs-parent="#sidenavSecExample">
+          <li class="relative">
+            <a href="#!" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 3</a>
+          </li>
+          <li class="relative">
+            <a href="#!" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 4</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <hr class="my-2">
+    <ul class="relative px-1">
+      <li class="relative">
+        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" href="#!" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 mr-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor" d="M488.6 250.2L392 214V105.5c0-15-9.3-28.4-23.4-33.7l-100-37.5c-8.1-3.1-17.1-3.1-25.3 0l-100 37.5c-14.1 5.3-23.4 18.7-23.4 33.7V214l-96.6 36.2C9.3 255.5 0 268.9 0 283.9V394c0 13.6 7.7 26.1 19.9 32.2l100 50c10.1 5.1 22.1 5.1 32.2 0l103.9-52 103.9 52c10.1 5.1 22.1 5.1 32.2 0l100-50c12.2-6.1 19.9-18.6 19.9-32.2V283.9c0-15-9.3-28.4-23.4-33.7zM358 214.8l-85 31.9v-68.2l85-37v73.3zM154 104.1l102-38.2 102 38.2v.6l-102 41.4-102-41.4v-.6zm84 291.1l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6zm240 112l-85 42.5v-79.1l85-38.8v75.4zm0-112l-102 41.4-102-41.4v-.6l102-38.2 102 38.2v.6z"></path>
+          </svg>
+          <span>Non-collapsible link</span>
+        </a>
+      </li>
+      <li class="relative" id="sidenavXxEx2">
+        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer" data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse" data-bs-target="#collapseSidenavXxEx2" aria-expanded="false" aria-controls="collapseSidenavXxEx2">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="comments" class="w-3 h-3 mr-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path fill="currentColor" d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"></path>
+          </svg>
+          <span>Collapsible item 3</span>
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+          </svg>
+        </a>
+        <ul class="relative accordion-collapse collapse" id="collapseSidenavXxEx2" aria-labelledby="sidenavXxEx2" data-bs-parent="#sidenavSecExample">
+          <li class="relative">
+            <a href="#!" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 5</a>
+          </li>
+          <li class="relative">
+            <a href="#!" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 6</a>
+          </li>
+        </ul>
+      </li>
+      <li class="relative" id="sidenavXxEx3">
+        <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer" data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse" data-bs-target="#collapseSidenavXxEx3" aria-expanded="false" aria-controls="collapseSidenavXxEx3">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 mr-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="currentColor" d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z"></path>
+          </svg>
+          <span>Collapsible item 4</span>
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+          </svg>
+        </a>
+        <ul class="relative accordion-collapse collapse" id="collapseSidenavXxEx3" aria-labelledby="sidenavXxEx3" data-bs-parent="#sidenavSecExample">
+          <li class="relative">
+            <a href="#!" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 7</a>
+          </li>
+          <li class="relative">
+            <a href="#!" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 8</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="text-center bottom-0 absolute w-full">
+      <hr class="m-0">
+      <p class="py-2 text-sm text-gray-700">tailwind-elements.com</p>
+    </div>
+  </div></div>
 
-            <div class="content w-full bg-green-500">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel aliquam rerum ratione velit tenetur debitis, laborum accusamus eligendi magnam consequuntur? Quae a quam reprehenderit ipsa saepe magnam nihil error ex minima itaque praesentium velit, nisi accusantium nemo consequuntur odit distinctio optio esse modi quisquam, rerum quos. Magni sapiente sit ipsam, maxime debitis harum facilis aliquam totam dignissimos fuga soluta quae iste, fugit quia, repellat iusto labore. Nostrum vel consectetur consequatur obcaecati animi reprehenderit quod molestiae praesentium voluptates, corrupti et deleniti doloremque pariatur facilis dolor. Deleniti aut eligendi magnam in autem. Dolore sequi provident doloribus officiis esse consequuntur recusandae quidem est ut alias ipsa, temporibus voluptates hic laudantium! Blanditiis quae dignissimos natus eveniet molestiae molestias itaque, corporis officiis asperiores cumque quibusdam consequuntur ex in laudantium aliquam tempore obcaecati quaerat reiciendis perferendis. Sapiente, aliquam maxime ipsum quasi necessitatibus asperiores ea quas ab architecto eius pariatur velit ad dolorum quod molestias consequuntur adipisci eos doloremque cupiditate. Corporis consequatur minus voluptates saepe dolorem tenetur, ea nemo doloremque quae eos, debitis suscipit sapiente quaerat quos blanditiis ipsum ad, optio voluptatibus? Ea vitae veniam in eligendi quo totam ipsam ratione recusandae, quia incidunt. Rem unde maxime sunt suscipit ipsam minima eius fugiat ipsa! Odio itaque reiciendis dolorem pariatur rerum quam nihil illum, necessitatibus aperiam. Iure dicta nemo, soluta voluptatem laudantium repellat delectus voluptates tempore doloremque molestias iste corporis et quibusdam, dolorem cum reiciendis libero a voluptatibus voluptatum natus! Corporis doloribus vero, pariatur quo itaque soluta esse porro architecto cum odio cupiditate officiis quaerat ea maiores asperiores delectus non sint suscipit quidem tenetur aut tempore corrupti ratione atque. Dolores quibusdam repudiandae provident excepturi corrupti. Tenetur neque sunt reprehenderit aliquam nisi, impedit deleniti dolorem, vitae facilis, tempore officia excepturi obcaecati. Dolorem sunt aperiam molestias, atque, nisi consequuntur accusamus voluptatem similique illo odit consequatur placeat iure? Rem repudiandae ratione voluptatibus impedit at explicabo itaque necessitatibus commodi assumenda! Sunt ea perferendis ad possimus, aspernatur eos porro ut tenetur soluta vitae, exercitationem facere mollitia commodi minima animi consequatur fuga qui quia quibusdam beatae! Beatae, qui blanditiis adipisci, tempore similique quidem, minima iure iusto numquam porro delectus accusantium quae! Non mollitia voluptatibus nulla iste nihil perspiciatis at dolorem officia sit fuga vitae, necessitatibus ad in quas, quasi fugiat quibusdam voluptate accusamus ipsa enim ipsum. Dolore vitae repudiandae molestias unde tempora quia in, nemo iure et non atque qui ipsum at laudantium impedit dicta nobis molestiae sequi. Debitis ab explicabo, cumque quam labore assumenda alias facilis. Dolorem eaque dicta nisi distinctio earum quos deserunt ipsam quisquam, ab facere, expedita adipisci voluptate harum explicabo provident doloribus! Adipisci voluptas id sapiente ipsa quisquam a exercitationem autem laborum cupiditate neque minus eum suscipit fuga, ex debitis voluptates nisi earum qui dolorem, sit saepe sequi aliquid. Quasi magni officiis quod ducimus ex odio mollitia atque doloribus doloremque, nam ratione quos tenetur deserunt repellendus sit corporis maxime ut consequatur sequi esse incidunt temporibus quisquam dicta? Odio nisi pariatur tempore reiciendis eveniet! Cumque eius ab inventore numquam ipsum debitis incidunt! Recusandae, tempore inventore? Ratione aliquid error est ex eaque architecto atque dolore mollitia quis voluptatum dignissimos harum iure doloribus molestiae quam omnis, dolor nostrum. Saepe reprehenderit perspiciatis excepturi soluta. Veritatis ullam exercitationem minima alias, non architecto. Saepe excepturi odio optio voluptatibus facere illum? Illum ipsa, magnam sed, cumque iusto officiis officia quae illo magni veritatis sint rem. Eum, hic sunt blanditiis corrupti magni, ullam maxime id minus vero doloremque tempore, dolor eligendi natus dolores quibusdam fuga asperiores nihil. Vel itaque magni voluptate perferendis! Eligendi similique molestias placeat, non magnam nemo error porro cum recusandae, blanditiis laborum excepturi facere voluptatibus commodi numquam sunt cumque, quaerat dolorem. Magnam mollitia explicabo numquam aspernatur maxime architecto totam temporibus necessitatibus dolores nemo laboriosam, molestias eveniet voluptates unde optio at sunt sint repudiandae aliquam voluptatibus, dicta pariatur voluptatum eaque. Nihil repudiandae veniam sunt provident animi similique. Quaerat magni rerum id quod quas ipsum dolore excepturi enim rem animi a unde, provident sed nulla et! Beatae quos ex blanditiis officiis doloremque asperiores porro magnam deserunt vitae nisi placeat unde nobis reiciendis deleniti provident numquam, accusamus sequi. Minus aperiam tempora illum deserunt unde provident nesciunt est quidem voluptas molestias facilis quam sequi perferendis perspiciatis iure labore modi odit optio, nulla ad nam tenetur illo? Dicta sapiente ducimus, maxime illum quod, reiciendis, culpa necessitatibus laborum alias rerum fugit tempore provident? Asperiores, amet nesciunt pariatur quisquam aspernatur hic labore laborum, commodi a quae quasi sequi culpa illum natus eveniet beatae? Hic harum dolorem magnam molestias, expedita delectus maiores nobis reiciendis minima tempore et voluptatem dicta distinctio inventore rem repellat sequi quod enim optio similique maxime consequuntur consequatur nostrum aperiam. Laborum odio perferendis nam non voluptatum ea. Reprehenderit aut quis obcaecati minima, neque magni autem necessitatibus. Maiores iusto voluptas necessitatibus sint beatae enim sit at, molestias ullam laudantium impedit vero numquam ea nobis reprehenderit accusamus expedita perferendis eligendi harum fuga cumque aperiam. Expedita sequi vel ut consequuntur! Odio architecto quam dolorum sint iusto aperiam ipsa possimus molestias nostrum at illo quod iure, voluptates consequuntur placeat labore ducimus optio reprehenderit. Dolor consectetur explicabo sunt molestias doloremque aut, minus earum vel enim fuga rerum similique aliquid. Iure obcaecati voluptatum exercitationem asperiores tenetur dolorum aut? Culpa tempora distinctio nisi quo illum debitis libero adipisci quis voluptatem assumenda sit, ut modi dicta dolorem, vel odit blanditiis a dignissimos. Dolor deserunt vitae saepe, distinctio neque iste nisi! Quas pariatur doloribus voluptates sapiente nesciunt doloremque tempora natus distinctio corrupti fuga repellendus ipsam maiores beatae, culpa, ea expedita aperiam libero? Corrupti excepturi temporibus, illo ad eligendi odio aliquam nemo? Ex esse nobis iste, fugiat molestiae deserunt quidem minus corrupti, aut minima obcaecati nam culpa excepturi blanditiis? Accusantium neque facere quas repellat magnam deserunt minus quam officia dignissimos minima iusto esse sunt corporis enim itaque, quae veritatis aliquid ducimus consequatur amet! Accusantium iste corporis consequatur deleniti necessitatibus, eum ipsa eius delectus? Quam aspernatur provident, quasi ab cupiditate illo suscipit aliquid quis maiores. Quia reiciendis iste sunt non dignissimos, vitae obcaecati repellat minus, ex quisquam, et laborum esse distinctio asperiores est labore iusto maiores accusamus dolor quod. Nostrum, a?
-</div>
+            <div class="content w-full">
+<section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 pt-5 pb-20 items-center justify-center flex-col">
+        <img class="lg:w-5/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
+            src="https://dummyimage.com/1920x1080">
+        <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Microdosing synth tattooed
+                vexillologist</h1>
+            <p class="mb-8 leading-relaxed">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled.
+                Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave
+                tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk freegan photo booth af
+                fingerstache pitchfork.</p>
+            <div class="flex justify-center">
+                <button
+                    class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                <button
+                    class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-22 mx-auto flex flex-wrap">
+        <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/2 md:w-full">
+                <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                    <div
+                        class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Shooting Stars</h2>
+                        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast
+                            vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                        <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-4 lg:w-1/2 md:w-full">
+                <div class="flex border-2 rounded-lg border-gray-200 border-opacity-50 p-8 sm:flex-row flex-col">
+                    <div
+                        class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-gray-900 text-lg title-font font-medium mb-3">The Catalyzer</h2>
+                        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast
+                            vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                        <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-20 mx-auto">
+        <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+            <div
+                class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                </svg>
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Shooting Stars</h2>
+                <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                    taxidermy. Gastropub indxgo juice poutine.</p>
+                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The Catalyzer</h2>
+                <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                    taxidermy. Gastropub indxgo juice poutine.</p>
+                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+            <div
+                class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+            <div
+                class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </div>
+            <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The 400 Blows</h2>
+                <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                    taxidermy. Gastropub indxgo juice poutine.</p>
+                <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <button
+            class="flex mx-auto mt-20 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+    </div>
+</section>
+<hr><footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
+                viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">Tailblocks</span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020
+            Tailblocks —
+            <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                target="_blank">@knyttneve</a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                    </path>
+                </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none"
+                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+            </a>
+        </span>
+    </div>
+</footer></div>
 
             <div id="rightoverlay" class="overlay bg-black opacity-50 fixed w-full h-screen z-40 top-0 right-0 hidden lg:hidden" onclick="rightover()"></div>
-            <div id="rightaside" class="right-aside lg:block w-[300px] lg:w-[520px] bg-blue-500 h-screen lg:h-[90vh] lg:sticky fixed z-50 right-[-300px] top-0 lg:top-[48px] duration-300">right</div>
+            <div id="rightaside" class="right-aside lg:block w-[300px] lg:w-[520px] h-screen lg:h-[90vh] lg:sticky fixed z-50 right-[-300px] top-0 lg:top-[56px] duration-300 bg-white lg:bg-transparent"><div class="w-full lg:border rounded-lg bg-white lg:my-5" id="sidenavSecExample">
+    <ul class="relative px-1">
+        <li class="relative">
+            <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out"
+                href="#!" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 mr-3" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
+                    </path>
+                </svg>
+                <span>Non-collapsible link</span>
+            </a>
+        </li>
+        <li class="relative" id="sidenavSecEx2">
+            <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer"
+                data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse"
+                data-bs-target="#collapseSidenavSecEx2" aria-expanded="false" aria-controls="collapseSidenavSecEx2">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 mr-3" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                    <path fill="currentColor"
+                        d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z">
+                    </path>
+                </svg>
+                <span>Collapsible item 1</span>
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                    </path>
+                </svg>
+            </a>
+            <ul class="relative accordion-collapse collapse" id="collapseSidenavSecEx2" aria-labelledby="sidenavSecEx2"
+                data-bs-parent="#sidenavSecExample">
+                <li class="relative">
+                    <a href="#!"
+                        class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out"
+                        data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 1</a>
+                </li>
+                <li class="relative">
+                    <a href="#!"
+                        class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out"
+                        data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 2</a>
+                </li>
+            </ul>
+        </li>
+        <li class="relative" id="sidenavSecEx3">
+            <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer"
+                data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse"
+                data-bs-target="#collapseSidenavSecEx3" aria-expanded="false" aria-controls="collapseSidenavSecEx3">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 mr-3" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z">
+                    </path>
+                </svg>
+                <span>Collapsible item 2</span>
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                    </path>
+                </svg>
+            </a>
+            <ul class="relative accordion-collapse collapse" id="collapseSidenavSecEx3" aria-labelledby="sidenavSecEx3"
+                data-bs-parent="#sidenavSecExample">
+                <li class="relative">
+                    <a href="#!"
+                        class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out"
+                        data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 3</a>
+                </li>
+                <li class="relative">
+                    <a href="#!"
+                        class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out"
+                        data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 4</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="w-full lg:border rounded-lg bg-white lg:my-5" id="sidenavSecExample">
+    <ul class="relative px-1">
+        <li class="relative">
+            <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out"
+                href="#!" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 mr-3" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z">
+                    </path>
+                </svg>
+                <span>Non-collapsible link</span>
+            </a>
+        </li>
+        <li class="relative" id="sidenavSecEx2">
+            <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer"
+                data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse"
+                data-bs-target="#collapseSidenavSecEx2" aria-expanded="false" aria-controls="collapseSidenavSecEx2">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 mr-3" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                    <path fill="currentColor"
+                        d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z">
+                    </path>
+                </svg>
+                <span>Collapsible item 1</span>
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                    </path>
+                </svg>
+            </a>
+            <ul class="relative accordion-collapse collapse" id="collapseSidenavSecEx2" aria-labelledby="sidenavSecEx2"
+                data-bs-parent="#sidenavSecExample">
+                <li class="relative">
+                    <a href="#!"
+                        class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out"
+                        data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 1</a>
+                </li>
+                <li class="relative">
+                    <a href="#!"
+                        class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out"
+                        data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 2</a>
+                </li>
+            </ul>
+        </li>
+        <li class="relative" id="sidenavSecEx3">
+            <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer"
+                data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse"
+                data-bs-target="#collapseSidenavSecEx3" aria-expanded="false" aria-controls="collapseSidenavSecEx3">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 mr-3" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                        d="M192 208c0-17.67-14.33-32-32-32h-16c-35.35 0-64 28.65-64 64v48c0 35.35 28.65 64 64 64h16c17.67 0 32-14.33 32-32V208zm176 144c35.35 0 64-28.65 64-64v-48c0-35.35-28.65-64-64-64h-16c-17.67 0-32 14.33-32 32v112c0 17.67 14.33 32 32 32h16zM256 0C113.18 0 4.58 118.83 0 256v16c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16v-16c0-114.69 93.31-208 208-208s208 93.31 208 208h-.12c.08 2.43.12 165.72.12 165.72 0 23.35-18.93 42.28-42.28 42.28H320c0-26.51-21.49-48-48-48h-32c-26.51 0-48 21.49-48 48s21.49 48 48 48h181.72c49.86 0 90.28-40.42 90.28-90.28V256C507.42 118.83 398.82 0 256 0z">
+                    </path>
+                </svg>
+                <span>Collapsible item 2</span>
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor"
+                        d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z">
+                    </path>
+                </svg>
+            </a>
+            <ul class="relative accordion-collapse collapse" id="collapseSidenavSecEx3" aria-labelledby="sidenavSecEx3"
+                data-bs-parent="#sidenavSecExample">
+                <li class="relative">
+                    <a href="#!"
+                        class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out"
+                        data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 3</a>
+                </li>
+                <li class="relative">
+                    <a href="#!"
+                        class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out"
+                        data-mdb-ripple="true" data-mdb-ripple-color="primary">Link 4</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div></div>
         </div>
     </div>
 </body>
