@@ -18,8 +18,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
     
-</head><body>
-    <div class="wrapper w-full bg-white shadow z-30 sticky top-0 lg:static">
+</head><body class="bg-[#fafbff]">
+    <div class="wrapper w-full bg-white border-b z-30 sticky top-0 lg:static">
         <div class="header-wrapper container mx-auto">
             <header><div class="flex items-center justify-between">
     <div class="left-trigger lg:hidden">
@@ -30,8 +30,7 @@
     <div class="logo mx-auto lg:ml-0 py-3">
         
         <div class="flex items-center space-x-3">
-            <img src="https://neerajadhav.in/gdsc/img/logo.png" alt="logo" class="w-10">
-            <h1 class="font-bold text-xl">GDSC SITRC</h1>
+            <img src="https://neerajadhav.in/gdsc/img/logoFull.png" alt="logo" class="w-52">
         </div>
     </div>
     <div class="left-trigger lg:hidden">
@@ -53,22 +52,28 @@
                 class="overlay bg-black opacity-50 fixed w-full h-screen z-40 top-0 left-0 hidden lg:hidden"
                 onclick="leftover()"></div>
             <div id="leftaside"
-                class="left-aside lg:block w-[300px] lg:w-2/12 h-screen lg:h-[80vh] lg:sticky fixed z-50 left-[-300px] top-0 duration-300 bg-white lg:bg-transparent"><div class="w-full h-full lg:border lg:shadow rounded-2xl absolute bg-white lg:my-5">
+                class="left-aside lg:block w-[300px] lg:w-2/12 h-screen lg:h-[80vh] lg:sticky fixed z-50 left-[-300px] top-0 duration-300 bg-white lg:bg-transparent"><div class="w-full h-full lg:border rounded-2xl absolute bg-white lg:my-5">
   <div class="text-center w-full">
     <p class="py-2 text-sm text-gray-700 font-bold">Domains</p>
     <hr class="m-0">
   </div>
   <aside class="flex flex-col space-y-2 p-2">
-    <a href="#" class="flex items-center space-x-3 rounded-2xl p-3 hover:bg-gray-100 text-gray-700 hover:text-blue-600">
+    <a href="#" class="flex items-center space-x-3 rounded p-2 hover:bg-gray-100 text-gray-500 hover:text-blue-600 border">
       <span class="text-2xl text-gray-400">
-        <i class='bx bx-home'></i>
+        <i class='bx bxs-right-arrow' ></i>
       </span>
       <span>Web Development</span>
+    </a>
+    <a href="#" class="flex items-center space-x-3 rounded p-2 hover:bg-gray-100 text-gray-500 hover:text-blue-600 border">
+      <span class="text-2xl text-gray-400">
+        <i class='bx bx-right-arrow'></i>
+      </span>
+      <span>Machine Learning</span>
     </a>
   </aside>
   <div class="text-center bottom-0 absolute w-full">
     <hr class="m-0">
-    <p class="py-2 text-sm text-gray-700">GDSC SITRC</p>
+    <p class="py-2 text-sm text-gray-700">&copy; 2022 GDSC SITRC</p>
   </div>
 </div></div>
 
@@ -335,12 +340,12 @@
                 class="overlay bg-black opacity-50 fixed w-full h-screen z-40 top-0 right-0 hidden lg:hidden"
                 onclick="rightover()"></div>
             <div id="rightaside"
-                class="right-aside lg:block w-[300px] lg:w-3/12 h-screen lg:static fixed z-50 lg:z-0 right-[-300px] top-0 lg:top-[64px] duration-300 bg-white lg:bg-transparent"><div class="w-full lg:border lg:shadow rounded-2xl bg-white lg:my-5">
+                class="right-aside lg:block w-[300px] lg:w-3/12 h-screen lg:static fixed z-50 lg:z-0 right-[-300px] top-0 lg:top-[64px] duration-300 bg-white lg:bg-transparent"><div class="w-full lg:border rounded-2xl bg-white lg:my-5">
     <div class="text-center w-full">
         <p class="py-2 text-sm text-gray-700 font-bold">Menu</p>
         <hr class="m-0">
     </div>
-    <div class="p-3 lg:hidden">
+    <div class="p-2 lg:hidden">
         <button class="w-full px-4 py-3 lg:px-3 lg:py-2 lg:my-2 rounded shadow bg-gradient-to-br from-blue-400 to-blue-800 text-white">
             <i class="fa fa-user-plus"></i> Join Club
         </button>
