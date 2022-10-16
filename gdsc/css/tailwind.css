@@ -797,6 +797,10 @@ video {
   width: 13rem;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .max-w-xs {
   max-width: 20rem;
 }
@@ -1233,6 +1237,10 @@ video {
 
   .lg\:w-3\/12 {
     width: 25%;
+  }
+
+  .lg\:w-52 {
+    width: 13rem;
   }
 
   .lg\:border {
