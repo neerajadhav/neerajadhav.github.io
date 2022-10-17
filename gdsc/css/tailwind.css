@@ -733,6 +733,14 @@ video {
   margin-top: 0px;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -769,6 +777,10 @@ video {
   height: 100vh;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-24 {
   width: 6rem;
 }
@@ -791,6 +803,10 @@ video {
 
 .w-44 {
   width: 11rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .flex-shrink-0 {
@@ -853,6 +869,18 @@ video {
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -861,8 +889,18 @@ video {
   overflow: hidden;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .overflow-x-scroll {
   overflow-x: scroll;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .rounded-full {
@@ -1183,6 +1221,23 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.hover\:text-gray-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:text-gray-400 {
+    --tw-text-opacity: 1;
+    color: rgb(156 163 175 / var(--tw-text-opacity));
+  }
+
+  .dark\:hover\:text-white:hover {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:text-2xl {
     font-size: 1.5rem;
@@ -1200,8 +1255,18 @@ video {
     margin: 1.25rem;
   }
 
+  .md\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:rounded-2xl {
@@ -1275,6 +1340,10 @@ video {
     height: 85vh;
   }
 
+  .lg\:h-auto {
+    height: auto;
+  }
+
   .lg\:w-2\/4 {
     width: 50%;
   }
@@ -1289,6 +1358,14 @@ video {
 
   .lg\:w-52 {
     width: 13rem;
+  }
+
+  .lg\:w-auto {
+    width: auto;
+  }
+
+  .lg\:overflow-hidden {
+    overflow: hidden;
   }
 
   .lg\:rounded-2xl {
