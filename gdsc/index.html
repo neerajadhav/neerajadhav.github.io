@@ -18,13 +18,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
     
-</head><body class="bg-[#fafbff]">
-    <div class="wrapper w-full bg-white border-b z-30 sticky top-0 lg:static">
+</head><body id="body" class="bg-[#fafbff]">
+    <div class="wrapper w-full bg-white border-b z-30">
         <div class="header-wrapper container mx-auto">
             <header><div class="flex items-center justify-between">
     <div class="left-trigger lg:hidden">
         <button onclick="leftopen()" class="my-3 mx-5 rounded text-2xl">
-            <i class='bx bx-category-alt'></i>
+            <i class='bx bx-expand-alt'></i>
         </button>
     </div>
     <div class="logo mx-auto lg:ml-0 py-3">
@@ -35,7 +35,7 @@
     </div>
     <div class="left-trigger lg:hidden">
         <button onclick="rightopen()" class="my-3 mx-5 rounded text-2xl">
-            <i class='bx bx-expand-alt'></i>
+            <i class='bx bx-category-alt'></i>
         </button>
     </div>
     <div class="left-trigger fixed bottom-0 right-0 m-5 lg:m-0 lg:static">
@@ -54,7 +54,7 @@
             <div id="leftaside"
                 class="left-aside lg:block w-[300px] lg:w-2/12 h-screen lg:h-[85vh] lg:sticky fixed z-50 left-[-300px] top-0 duration-300 bg-white lg:bg-transparent"><div class="w-full h-full absolute lg:border rounded-2xl bg-white lg:my-5">
   <div class="w-full">
-    <p class="p-3 text-sm text-gray-700 font-bold">Menu</p>
+    <p class="p-5 text-sm text-gray-700 font-bold">Menu</p>
     <hr class="m-0">
   </div>
   <aside class="flex flex-col space-y-2 p-2">
@@ -88,39 +88,37 @@
       </span>
       <span class="font-semibold">Event Calendar</span>
     </a>
-  </aside>
-  <div class="bottom-0 absolute w-full">
-    <div class="flex">
-      <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
-        <span class="text-2xl text-[#cd486b]">
-          <i class='bx bxl-instagram'></i>
-        </span>
-      </a>
-      <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
-        <span class="text-2xl text-[#0077b5]">
-          <i class='bx bxl-linkedin'></i>
-        </span>
-      </a>
-      <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
-        <span class="text-2xl text-black">
-          <i class='bx bxl-github'></i>
-        </span>
-      </a>
-      <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
-        <span class="text-2xl text-blue-700">
-          <i class='bx bx-news'></i>
-        </span>
-      </a>
-      <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
-        <span class="text-2xl text-[#1DA1F2]">
-          <i class='bx bxl-twitter'></i>
-        </span>
-      </a>
+  </aside><div class="bottom-0 absolute w-full bg-white lg:rounded-b-2xl">
+    <div class="flex p-3 flex-wrap">
+        <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
+            <span class="text-2xl text-[#cd486b]">
+                <i class='bx bxl-instagram'></i>
+            </span>
+        </a>
+        <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
+            <span class="text-2xl text-[#0077b5]">
+                <i class='bx bxl-linkedin'></i>
+            </span>
+        </a>
+        <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
+            <span class="text-2xl text-black">
+                <i class='bx bxl-github'></i>
+            </span>
+        </a>
+        <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
+            <span class="text-2xl text-blue-700">
+                <i class='bx bx-news'></i>
+            </span>
+        </a>
+        <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
+            <span class="text-2xl text-[#1DA1F2]">
+                <i class='bx bxl-twitter'></i>
+            </span>
+        </a>
     </div>
     <hr class="m-0">
-    <p class="p-3 text-sm text-gray-700">&copy; 2022 GDSC SITRC</p>
-  </div>
-</div></div>
+    <p class="p-5 text-sm text-gray-700">&copy; 2022 GDSC SITRC</p>
+</div></div></div>
 
             <div class="content w-full lg:w-8/12">
 <section>
@@ -387,84 +385,84 @@
             <div id="rightaside"
                 class="right-aside lg:block w-[300px] lg:w-2/12 h-screen lg:static fixed z-50 lg:z-0 right-[-300px] top-0 lg:top-[64px] duration-300 bg-white lg:bg-transparent overflow-auto"><div class="lg:border rounded-2xl bg-white lg:my-5">
     <div class="w-full">
-      <p class="p-3 text-sm text-gray-700 font-bold">Domains</p>
+      <p class="p-5 text-sm text-gray-700 font-bold">Domains</p>
       <hr class="m-0">
     </div>
     <aside class="flex flex-col space-y-2 p-2">
       <a href="#"
         class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100 text-blue-600">
         <span class="text-2xl">
-          <i class='bx bxs-tag-alt'></i>
+          <i class='bx bxl-android'></i>
         </span>
         <span class="font-semibold">Android</span>
       </a>
       <a href="#"
         class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100 text-gray-600">
         <span class="text-2xl text-gray-500">
-          <i class='bx bx-tag-alt'></i>
+          <i class='bx bx-link'></i>
         </span>
         <span class="font-semibold">Blockchain</span>
       </a>
       <a href="#"
         class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100 text-gray-600">
         <span class="text-2xl text-gray-500">
-          <i class='bx bx-tag-alt'></i>
+          <i class='bx bxl-google-cloud'></i>
         </span>
         <span class="font-semibold">Cloud Computing</span>
       </a>
       <a href="#"
         class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100 text-gray-600">
         <span class="text-2xl text-gray-500">
-          <i class='bx bx-tag-alt'></i>
+          <i class='bx bx-pencil'></i>
         </span>
         <span class="font-semibold">Content Writing</span>
       </a>
       <a href="#"
         class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100 text-gray-600">
         <span class="text-2xl text-gray-500">
-          <i class='bx bx-tag-alt'></i>
+          <i class='bx bx-terminal' ></i>
         </span>
         <span class="font-semibold">Cyber Security</span>
       </a>
       <a href="#"
         class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100 text-gray-600">
         <span class="text-2xl text-gray-500">
-          <i class='bx bx-tag-alt'></i>
+          <i class='bx bx-data' ></i>
         </span>
         <span class="font-semibold">Data Science</span>
       </a>
       <a href="#"
         class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100 text-gray-600">
         <span class="text-2xl text-gray-500">
-          <i class='bx bx-tag-alt'></i>
+          <i class='bx bx-network-chart'></i>
         </span>
         <span class="font-semibold">Data Structure and Algorithm</span>
       </a>
       <a href="#"
         class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100 text-gray-600">
         <span class="text-2xl text-gray-500">
-          <i class='bx bx-tag-alt'></i>
+          <i class='bx bx-vector'></i>
         </span>
         <span class="font-semibold">Graphic Designimg</span>
       </a>
       <a href="#"
         class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100 text-gray-600">
         <span class="text-2xl text-gray-500">
-          <i class='bx bx-tag-alt'></i>
+          <i class='bx bxl-python' ></i>
         </span>
         <span class="font-semibold">Artificial Inteligence Machine Learning</span>
       </a>
       <a href="#"
         class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100 text-gray-600">
         <span class="text-2xl text-gray-500">
-          <i class='bx bx-tag-alt'></i>
+          <i class='bx bx-line-chart'></i>
         </span>
         <span class="font-semibold">Marketing</span>
       </a>
       <a href="#"
         class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100 text-gray-600">
         <span class="text-2xl text-gray-500">
-          <i class='bx bx-tag-alt'></i>
+          <i class='bx bx-code-alt' ></i>
         </span>
         <span class="font-semibold">Web Development</span>
       </a>
