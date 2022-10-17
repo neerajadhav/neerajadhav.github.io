@@ -1,4 +1,4 @@
-function leftopen(){
+function leftopen() {
     var left = document.getElementById("leftaside");
     var overlay = document.getElementById("leftoverlay");
     var body = document.getElementsByTagName("BODY")[0];
@@ -11,7 +11,7 @@ function leftopen(){
     body.classList.add("w-full");
 }
 
-function leftover(){
+function leftover() {
     var left = document.getElementById("leftaside");
     var overlay = document.getElementById("leftoverlay");
     var body = document.getElementsByTagName("BODY")[0];
@@ -24,7 +24,7 @@ function leftover(){
     body.classList.remove("w-full");
 }
 
-function rightopen(){
+function rightopen() {
     var left = document.getElementById("rightaside");
     var overlay = document.getElementById("rightoverlay");
     var body = document.getElementsByTagName("BODY")[0];
@@ -37,7 +37,7 @@ function rightopen(){
     body.classList.add("w-full");
 }
 
-function rightover(){
+function rightover() {
     var left = document.getElementById("rightaside");
     var overlay = document.getElementById("rightoverlay");
     var body = document.getElementsByTagName("BODY")[0];
@@ -48,4 +48,28 @@ function rightover(){
     overlay.classList.add("hidden");
     body.classList.remove("fixed");
     body.classList.remove("w-full");
+}
+
+var h = document.getElementById("stickyHead");
+var stuck = false;
+var stickPoint = getDistance();
+
+function getDistance() {
+    var topDist = h.offsetTop;
+    return topDist;
+}
+
+window.onscroll = function (e) {
+    var distance = getDistance() - window.pageYOffset;
+    var offset = window.pageYOffset;
+
+    if ((distance <= 0) && !stuck) {
+        stuck = true;
+        h.classList.add("lg:rounded-t-none");
+    } else if (stuck && (offset <= stickPoint)) {
+        stuck = false;
+        h.classList.remove("lg:rounded-t-none");
+    }
+
+    console.log(stickPoint + '   ' + distance + '   ' + offset + '   ' + stuck);
 }
