@@ -65,10 +65,10 @@ window.onscroll = function (e) {
 
     if ((distance <= 0) && !stuck) {
         stuck = true;
-        h.classList.add("lg:rounded-t-none");
+        h.classList.add("md:rounded-t-none");
     } else if (stuck && (offset <= stickPoint)) {
         stuck = false;
-        h.classList.remove("lg:rounded-t-none");
+        h.classList.remove("md:rounded-t-none");
     }
 
     console.log(stickPoint + '   ' + distance + '   ' + offset + '   ' + stuck);
