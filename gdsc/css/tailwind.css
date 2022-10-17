@@ -801,6 +801,12 @@ video {
   flex-grow: 1;
 }
 
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1190,8 +1196,30 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:m-5 {
+    margin: 1.25rem;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
+  }
+
+  .md\:rounded-2xl {
+    border-radius: 1rem;
+  }
+
+  .md\:rounded-t-none {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .md\:border {
+    border-width: 1px;
+  }
+
+  .md\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 }
 

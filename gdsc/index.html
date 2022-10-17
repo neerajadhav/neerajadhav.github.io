@@ -21,7 +21,7 @@
 </head><body id="body" class="bg-[#fafbff]">
     <div class="wrapper w-full bg-white border-b z-30">
         <div class="header-wrapper container mx-auto">
-            <header><div class="flex items-center justify-between">
+            <header><div class="flex items-center justify-between select-none">
     <div class="left-trigger lg:hidden">
         <button onclick="leftopen()" class="my-3 mx-5 rounded text-2xl">
             <i class='bx bx-expand-alt'></i>
@@ -52,7 +52,7 @@
                 class="overlay bg-black opacity-50 fixed w-full h-screen z-40 top-0 left-0 hidden lg:hidden"
                 onclick="leftover()"></div>
             <div id="leftaside"
-                class="left-aside lg:block w-[300px] lg:w-2/12 h-screen lg:h-[85vh] lg:sticky fixed z-50 left-[-300px] top-0 duration-300 bg-white lg:bg-transparent"><div class="w-full h-full absolute lg:border rounded-2xl bg-white lg:my-5">
+                class="left-aside lg:block w-[300px] lg:w-2/12 h-screen lg:h-[85vh] lg:sticky fixed z-50 left-[-300px] top-0 duration-300 bg-white lg:bg-transparent"><div class="w-full h-full absolute lg:border rounded-2xl bg-white lg:my-5 select-none">
   <div class="w-full">
     <p class="p-5 text-sm text-gray-700 font-bold">Menu</p>
     <hr class="m-0">
@@ -121,8 +121,8 @@
 </div></div></div>
 
             <div class="content w-full lg:w-8/12">
-<div class="lg:rounded-t-none hidden"></div>
-<section id="stickyHead" class="bg-white sticky top-0 z-30 border-b lg:border lg:rounded-2xl lg:m-5 py-3 lg:py-5">
+<div class="md:rounded-t-none hidden"></div>
+<section id="stickyHead" class="bg-white sticky top-0 z-30 border-b md:border md:rounded-2xl md:m-5 py-3 md:py-5 select-none">
     <div class="flex flex-col">
         <div class="flex overflow-x-scroll hide-scroll-bar px-5">
             <div class="flex flex-nowrap space-x-5">
@@ -355,7 +355,7 @@
                 class="overlay bg-black opacity-50 fixed w-full h-screen z-40 top-0 right-0 hidden lg:hidden"
                 onclick="rightover()"></div>
             <div id="rightaside"
-                class="right-aside lg:block w-[300px] lg:w-2/12 h-screen lg:static fixed z-50 lg:z-0 right-[-300px] top-0 lg:top-[64px] duration-300 bg-white lg:bg-transparent overflow-auto"><div class="lg:border rounded-2xl bg-white lg:my-5">
+                class="right-aside lg:block w-[300px] lg:w-2/12 h-screen lg:static fixed z-50 lg:z-0 right-[-300px] top-0 lg:top-[64px] duration-300 bg-white lg:bg-transparent overflow-auto"><div class="lg:border rounded-2xl bg-white lg:my-5 select-none">
     <div class="w-full">
       <p class="p-5 text-sm text-gray-700 font-bold">Domains</p>
       <hr class="m-0">
