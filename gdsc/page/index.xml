@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GDSC SITRC</title>
-    <link>https://neerajadhav.in/gdsc/</link>
-    <description>Recent content on GDSC SITRC</description>
+    <title>Pages on GDSC SITRC</title>
+    <link>https://neerajadhav.in/gdsc/page/</link>
+    <description>Recent content in Pages on GDSC SITRC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Oct 2022 13:20:27 +0530</lastBuildDate><atom:link href="https://neerajadhav.in/gdsc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Oct 2022 13:20:27 +0530</lastBuildDate><atom:link href="https://neerajadhav.in/gdsc/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://neerajadhav.in/gdsc/about/</link>
@@ -31,15 +31,6 @@
       <pubDate>Thu, 20 Oct 2022 13:20:08 +0530</pubDate>
       
       <guid>https://neerajadhav.in/gdsc/faqs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web Dev</title>
-      <link>https://neerajadhav.in/gdsc/domain/web-dev/</link>
-      <pubDate>Thu, 20 Oct 2022 12:49:57 +0530</pubDate>
-      
-      <guid>https://neerajadhav.in/gdsc/domain/web-dev/</guid>
       <description></description>
     </item>
     

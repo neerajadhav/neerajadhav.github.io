@@ -2,9 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://neerajadhav.in/gdsc/categories/</loc>
+    <loc>https://neerajadhav.in/gdsc/about/</loc>
+    <lastmod>2022-10-20T13:20:27+05:30</lastmod>
   </url><url>
     <loc>https://neerajadhav.in/gdsc/</loc>
+    <lastmod>2022-10-20T13:20:27+05:30</lastmod>
+  </url><url>
+    <loc>https://neerajadhav.in/gdsc/page/</loc>
+    <lastmod>2022-10-20T13:20:27+05:30</lastmod>
+  </url><url>
+    <loc>https://neerajadhav.in/gdsc/contact/</loc>
+    <lastmod>2022-10-20T13:20:19+05:30</lastmod>
+  </url><url>
+    <loc>https://neerajadhav.in/gdsc/faqs/</loc>
+    <lastmod>2022-10-20T13:20:08+05:30</lastmod>
+  </url><url>
+    <loc>https://neerajadhav.in/gdsc/domain/</loc>
+    <lastmod>2022-10-20T12:49:57+05:30</lastmod>
+  </url><url>
+    <loc>https://neerajadhav.in/gdsc/domain/web-dev/</loc>
+    <lastmod>2022-10-20T12:49:57+05:30</lastmod>
+  </url><url>
+    <loc>https://neerajadhav.in/gdsc/categories/</loc>
   </url><url>
     <loc>https://neerajadhav.in/gdsc/tags/</loc>
   </url>
