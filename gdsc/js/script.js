@@ -51,23 +51,27 @@ function rightover() {
 }
 
 var h = document.getElementById("stickyHead");
-var stuck = false;
-var stickPoint = getDistance();
+if (h) {
+    var stuck = false;
+    var stickPoint = getDistance();
 
-function getDistance() {
-    var topDist = h.offsetTop;
-    return topDist;
-}
-
-window.onscroll = function (e) {
-    var distance = getDistance() - window.pageYOffset;
-    var offset = window.pageYOffset;
-
-    if ((distance <= 0) && !stuck) {
-        stuck = true;
-        h.classList.remove("md:rounded-2xl");
-    } else if (stuck && (offset <= stickPoint)) {
-        stuck = false;
-        h.classList.add("md:rounded-2xl");
+    function getDistance() {
+        var topDist = h.offsetTop;
+        return topDist;
     }
+
+    window.onscroll = function (e) {
+        var distance = getDistance() - window.pageYOffset;
+        var offset = window.pageYOffset;
+
+        if ((distance <= 0) && !stuck) {
+            stuck = true;
+            h.classList.remove("md:rounded-2xl");
+        } else if (stuck && (offset <= stickPoint)) {
+            stuck = false;
+            h.classList.add("md:rounded-2xl");
+        }
+    }
+}else{
+    console.log("stickyHead not found!")
 }

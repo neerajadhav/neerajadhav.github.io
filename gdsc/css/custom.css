@@ -1,0 +1,24 @@
+#TableOfContents ul {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#TableOfContents li:last-child {
+    margin-right: 1rem;
+}
+
+#TableOfContents::-webkit-scrollbar {
+    display: none;
+}
+
+#TableOfContents li {
+    display: inherit;
+    color: rgb(55 65 81 / 1);
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 1rem;
+    margin-left: 1rem;
+}
