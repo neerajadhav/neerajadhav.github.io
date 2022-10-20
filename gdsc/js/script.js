@@ -65,11 +65,9 @@ window.onscroll = function (e) {
 
     if ((distance <= 0) && !stuck) {
         stuck = true;
-        h.classList.add("md:rounded-t-none");
+        h.classList.remove("md:rounded-2xl");
     } else if (stuck && (offset <= stickPoint)) {
         stuck = false;
-        h.classList.remove("md:rounded-t-none");
+        h.classList.add("md:rounded-2xl");
     }
-
-    console.log(stickPoint + '   ' + distance + '   ' + offset + '   ' + stuck);
 }
