@@ -4,10 +4,7 @@
     overflow-x: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
-}
-
-#TableOfContents li:last-child {
-    margin-right: 1rem;
+    padding: 16px 0px;
 }
 
 #TableOfContents::-webkit-scrollbar {
@@ -17,8 +14,9 @@
 #TableOfContents li {
     display: inherit;
     color: rgb(55 65 81 / 1);
-    border: 1px solid lightgray;
+    /* box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); */
     padding: 10px;
     border-radius: 1rem;
-    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid lightgray;
 }

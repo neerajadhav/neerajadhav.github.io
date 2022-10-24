@@ -66,10 +66,10 @@ if (h) {
 
         if ((distance <= 0) && !stuck) {
             stuck = true;
-            h.classList.remove("md:rounded-2xl");
+            // h.classList.add("border-b");
         } else if (stuck && (offset <= stickPoint)) {
             stuck = false;
-            h.classList.add("md:rounded-2xl");
+            // h.classList.remove("border-b");
         }
     }
 }else{
