@@ -137,17 +137,21 @@
             <div class="content w-full lg:w-8/12 md:p-5">
                 <section class="md:border md:rounded-2xl bg-white">
 <main>
-    <div class="relative">
-        <img class="w-full hidden md:block md:rounded-t-2xl" src="https://source.unsplash.com/random/1080x300/?web%2ccoding" />
-        <img class="w-full md:hidden md:rounded-t-2xl" src="https://source.unsplash.com/random/1080x500/?web%2ccoding" />
+    <div class="relative select-none">
+        <img class="w-full hidden md:block md:rounded-t-2xl"
+            src="https://source.unsplash.com/random/1080x300/?web%2ccoding" />
+        <img class="w-full md:hidden md:rounded-t-2xl"
+            src="https://source.unsplash.com/random/1080x500/?web%2ccoding" />
         <div
-            class="absolute z-10 bottom-0 left-0 text-4xl p-5 text-white bg-gradient-from-bl bg-gradient-to-tr from-black h-full w-full flex items-end md:rounded-t-2xl">
-            <i class="bx bx-code-alt"></i> &nbsp; Web Dev
+            class="absolute z-10 bottom-0 left-0 text-3xl md:text-4xl p-5 text-white bg-gradient-from-bl bg-gradient-to-tr from-black h-full w-full flex items-end md:rounded-t-2xl">
+            <span class="flex items-center">
+                <i class="bx bx-code-alt"></i> &nbsp; Web Dev
+            </span>
         </div>
     </div>
 
     <section class="p-5 pb-0">
-    <nav class="flex" aria-label="Breadcrumb">
+    <nav class="flex select-none" aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-3">
             <li class="inline-flex items-center space-x-3">
                 <i class='bx bx-home-alt text-2xl text-gray-400'></i>
@@ -178,48 +182,7 @@
 </section>
 
     <div class="p-5">
-        <p>Connectivity is a phenomenal power we&rsquo;ve got. Today, the whole world is connected by some or the other means. Technologically these mediums are desktops, mobile phones, tablets, smart wearable devices and the list goes on. But how does this all happen, how does data gets from one point to another? How does different devices and applications connect with each other and how does they allow us to shop, book a flight and order food? Speaking in Ajay Devgn&rsquo;s style, the unsung worrier of this scenario is the <strong>API</strong>.</p>
-<section id="stickyHead"
-    class="bg-white sticky top-0 z-30 select-none text-sm whitespace-nowrap">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#what-is-an-api">What is an API?</a></li>
-    <li><a href="#example-1">Example 1</a></li>
-    <li><a href="#example-2">Example 2</a></li>
-    <li><a href="#hotel-booking-service">Hotel Booking Service</a></li>
-    <li><a href="#how-can-you-make-use-of-api">How can you make use of API</a></li>
-  </ul>
-</nav>
-</section>
-<div class="hidden border-b"></div>
-<h2 id="what-is-an-api">What is an API?</h2>
-<p><img src="https://media.giphy.com/media/3oz8xZvvOZRmKay4xy/giphy.gif" alt="What is an API">
-<a href="https://media.giphy.com/media/3oz8xZvvOZRmKay4xy/giphy.gif">via GIPHY</a></p>
-<p><strong>Application Programming Interface</strong> or the API is working under the hood, or behind the scenes which we generally taken for granted. It is responsible for all the connectivity which we expect and rely on. But what API really is?</p>
-<p>In technical terms, &ldquo;An application programming interface (API) is a set of protocols, routines, functions and/or commands that programmers use to facilitate interaction between distinct software services.&rdquo;</p>
-<p>In laymen terms, an API is just a messenger that works to deliver messages between you and the system. It takes a query from you, takes it to the system, resolves it and bring back the desired response you expect. Still got a question that why should we use an API when the frameworks already has a connection between the front-end and back-end? Let&rsquo;s understand this with an easy example.</p>
-<h2 id="example-1">Example 1</h2>
-<p><img src="https://media.giphy.com/media/Qynm6XAan1twKkRkq2/giphy.gif" alt="Example 1">
-<a href="https://media.giphy.com/media/Qynm6XAan1twKkRkq2/giphy.gif">via GIPHY</a></p>
-<p>Suppose you are at a restaurant, sitting at your table reading the menu. There is a kitchen far from you where food is being cooked. You chose a dish and decided to order it, what would you do next? Obviously you will call the waiter, who then takes your order, get it to the chef, then the chef prepares your dish which the waiter bring back to you.</p>
-<p>In this example you were the user, your dish was your request, the kitchen worked as a system and the waiter was the API. Now let&rsquo;s get it through a programmer&rsquo;s life example.</p>
-<h2 id="example-2">Example 2</h2>
-<p><img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="Example 2">
-<a href="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif">via GIPHY</a></p>
-<p>Let&rsquo;s assume you are a Django developer and you are working on a banking website project. Working on each and every component of the application from scratch and hard coding every little thing would be a hectic job. From somewhere you came to know that your friend has already made a EMI calculator in react js which you can make use of for your project. But the problem here is, how to use react components in Django, nor your friend is willing to share the logic of the calculator.</p>
-<p>In this case, the best solution for this is that, your friend creates an API and share the endpoints with you. By performing various HTTP requests over that API you easily would be able to get the work done along with your friend abstracting the actual code. This is the power of API.</p>
-<p>Now you are in the position of explaining what an API is. Let&rsquo;s look at one of the real world use cases of API.</p>
-<h2 id="hotel-booking-service">Hotel Booking Service</h2>
-<p><img src="https://media.giphy.com/media/G9voucRrxhJeA4cUaV/giphy.gif" alt="Hotel Booking Service">
-<a href="https://media.giphy.com/media/G9voucRrxhJeA4cUaV/giphy.gif">via GIPHY</a></p>
-<p>You must have heard of <strong>trivago</strong>. It is a metasearch engine that compares accommodation prices and offers provided to us by many different online booking sites. They compare and display different offers from many booking sites, who then pays trivago a fee if a we click on their specific deal. But from where trivago collects all this data?</p>
-<p>FastConnect is the hotel search API that establishes a direct interface between the reservation system and trivago to pull real-time hotel rates and availability.</p>
-<h2 id="how-can-you-make-use-of-api">How can you make use of API</h2>
-<p><img src="https://media.giphy.com/media/3o6gbbuLW76jkt8vIc/giphy.gif" alt="How can you make use of API">
-<a href="https://media.giphy.com/media/3o6gbbuLW76jkt8vIc/giphy.gif">via GIPHY</a></p>
-<p>Let&rsquo;s say you are developing a chat application. In that you added a feature for sending GIFs. One way you can develop your own GIF library from where the users can search and send GIFs, but this is not an optimal solution. The other way is that you can make use of the GIPHY API and by using their endpoint you can easily get access to the collection of millions of GIFs library which would save a lot of time.</p>
-<p>Hope you&rsquo;re able to see the clear picture of the term API from a Freshman&rsquo;s POV. For more such articles subscribe to our newsletter service so you won&rsquo;t miss an update regarding our next post. Keep reading, Keep exploring, Keep learning.</p>
-
+        
     </div>
 </main>
 </section>
