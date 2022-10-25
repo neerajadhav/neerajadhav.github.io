@@ -1,358 +1,855 @@
-<!DOCTYPE html>
-<html>
-
-
-
 <head>
 	<meta name="generator" content="Hugo 0.104.3" />
+    <script src="/gdsc/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=gdsc/livereload" data-no-instant
+        defer></script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="" />
     <title>GDSC SITRC</title>
-    <link rel="stylesheet" href="https://neerajadhav.in/gdsc/css/tailwind.css">
-    <link rel="stylesheet" href="https://neerajadhav.in/gdsc/css/custom.css">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
-    <link rel="shortcut icon" href="https://neerajadhav.in/gdsc/img/logo.png" type="image/png">
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <link rel="preload" href="https://tailwindui.com/fonts/Inter-roman.var.woff2?v=3.18" as="font" type="font/woff2"
+        crossorigin="">
+    <link href="https://tailwindui.com/css/app.css?id=30dabc2ebaac25071486bd2f554bc432" rel="stylesheet" />
 
-</head><body id="body" class="bg-[#fafbff] lg:static lg:w-auto">
-    <div class="wrapper w-full bg-white border-b z-30 relative">
-        <div class="header-wrapper container mx-auto">
-            <header><div class="flex items-center justify-between select-none">
-    <div class="left-trigger lg:hidden">
-        <button onclick="leftopen()" class="my-3 mx-5 rounded text-2xl">
-            <i class='bx bx-expand-alt bx-rotate-90' ></i>
-        </button>
-    </div>
-    <div class="logo mx-auto lg:ml-0 py-3">
-        
-        <div class="flex items-center space-x-3">
-            <a href="https://neerajadhav.in/gdsc/"><img src="https://neerajadhav.in/gdsc/img/logoFull.png" alt="logo" class="w-44 lg:w-52"></a>
-        </div>
-    </div>
-    <div class="left-trigger lg:hidden">
-        <button onclick="rightopen()" class="my-3 mx-5 rounded text-2xl">
-            <i class='bx bx-category-alt'></i>
-        </button>
-    </div>
-    <div class="z-30 left-trigger fixed bottom-0 right-0 m-5 lg:m-0 lg:static">
-        <button class="px-4 py-3 lg:px-3 lg:py-2 lg:my-2 rounded-lg shadow bg-blue-500 text-white">
-            <i class="fa fa-user-plus"></i> Join Club
-        </button>
-    </div>
-</div></header>
-        </div>
-    </div>
-    <div class="wrapper w-full">
-        <div class="content-wrapper flex mx-auto justify-between container">
-            <div id="leftoverlay"
-                class="overlay bg-black opacity-50 fixed w-full h-screen z-40 top-0 left-0 hidden lg:hidden"
-                onclick="leftover()"></div>
-            <div id="leftaside"
-                class="left-aside lg:block w-[300px] lg:w-2/12 h-screen lg:sticky fixed z-50 left-[-300px] top-0 duration-300 bg-white lg:bg-transparent"><div class="w-full lg:border rounded-2xl bg-white lg:my-5 select-none">
-  <div class="w-full">
-    <p class="px-5 py-3 text-sm text-gray-700 font-bold">Menu</p>
-    <hr class="m-0">
-  </div>
-  <aside class="flex flex-col p-2 text-sm">
-    
-    
-    <a href="/gdsc/"
-      class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-blue-600 ">
-      <span class="text-2xl">
-        <i class='bx bx-home-alt'></i>
-      </span>
-      <span class="font-semibold">Home</span>
-    </a>
-    
-    
-    <a href="https://neerajadhav.in/gdsc/about/"
-      class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-gray-600 ">
-      <span class="text-2xl">
-        <i class='bx bx-info-circle'></i>
-      </span>
-      <span class="font-semibold">About</span>
-    </a>
-    
-    <a href="https://neerajadhav.in/gdsc/contact/"
-      class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-gray-600 ">
-      <span class="text-2xl">
-        <i class='bx bx-paper-plane'></i>
-      </span>
-      <span class="font-semibold">Contact</span>
-    </a>
-    
-    <a href="https://neerajadhav.in/gdsc/faqs/"
-      class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-gray-600 ">
-      <span class="text-2xl">
-        <i class='bx bx-question-mark'></i>
-      </span>
-      <span class="font-semibold">FAQs</span>
-    </a>
-    
-  </aside>
-  <hr><div class="w-full bg-white lg:rounded-b-2xl">
-    <div class="flex p-3 flex-wrap">
-        
-        
-        <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
-            <span class="text-2xl text-blue-700">
-                <i class='bx bx-news'></i>
-            </span>
-        </a>
-        
-        <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
-            <span class="text-2xl text-black">
-                <i class='bx bxl-github'></i>
-            </span>
-        </a>
-        
-        <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
-            <span class="text-2xl text-[#cd486b]">
-                <i class='bx bxl-instagram'></i>
-            </span>
-        </a>
-        
-        <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
-            <span class="text-2xl text-[#0077b5]">
-                <i class='bx bxl-linkedin'></i>
-            </span>
-        </a>
-        
-        <a href="#" class="flex items-center space-x-3 rounded-xl p-2 text-gray-600">
-            <span class="text-2xl text-[#1DA1F2]">
-                <i class='bx bxl-twitter'></i>
-            </span>
-        </a>
-        
-    </div>
-    <hr class="m-0">
-    <p class="px-5 py-3 text-sm text-gray-700">&copy; 2022 GDSC SITRC</p>
-</div></div></div>
+</head>
 
-            <div class="content w-full lg:w-8/12 md:p-5">
-                <section class="md:border md:rounded-2xl bg-white">
-<section>
-    <div class="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 p-5"
-        style="opacity: 1; transform: none;">
-        <div class=" flex flex-col md:justify-center items-start row-start-2 sm:row-start-1">
-            <h1 class="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-normal">Welcome to GDSC
-                <strong>SITRC</strong>.
-            </h1>
-            <p class="text-black-500 mt-4 mb-6">Sandip Institute of Technology and Research Center</p>
-            <button
-                class="py-3 lg:py-4 px-12 lg:px-16 text-white-500 font-semibold rounded-lg bg-blue-500 text-white hover:shadow-orange-md transition-all outline-none undefined">
-                <i class="fa fa-user-plus"></i> Join Club
-            </button>
+<body>
+    <header class="relative z-50 w-full flex-none text-sm font-semibold leading-6 text-slate-900">
+        <nav aria-label="Global" class="mx-auto max-w-container px-4 sm:px-6 lg:px-8">
+            <div class="relative flex items-center py-[2.125rem]"><a class="mr-auto flex-none text-slate-900"
+                    href="/"><span class="sr-only">Tailwind UI</span><svg class="h-6 w-auto" aria-hidden="true"
+                        viewBox="0 0 160 24" fill="none">
+                        <path
+                            d="M18.724 1.714c-4.538 0-7.376 2.286-8.51 6.857 1.702-2.285 3.687-3.143 5.957-2.57 1.296.325 2.22 1.271 3.245 2.318 1.668 1.706 3.6 3.681 7.819 3.681 4.539 0 7.376-2.286 8.51-6.857-1.701 2.286-3.687 3.143-5.957 2.571-1.294-.325-2.22-1.272-3.245-2.32-1.668-1.705-3.6-3.68-7.819-3.68zM10.214 12c-4.539 0-7.376 2.286-8.51 6.857 1.701-2.286 3.687-3.143 5.957-2.571 1.294.325 2.22 1.272 3.245 2.32 1.668 1.705 3.6 3.68 7.818 3.68 4.54 0 7.377-2.286 8.511-6.857-1.702 2.286-3.688 3.143-5.957 2.571-1.295-.326-2.22-1.272-3.245-2.32-1.669-1.705-3.6-3.68-7.82-3.68z"
+                            class="fill-sky-400"></path>
+                        <path
+                            d="M51.285 9.531V6.857h-3.166v-3.6l-2.758.823v2.777h-2.348v2.674h2.348v6.172c0 3.343 1.686 4.526 5.924 4.011V17.22c-2.094.103-3.166.129-3.166-1.517V9.53h3.166zm12.087-2.674v1.826c-.97-1.337-2.476-2.16-4.468-2.16-3.472 0-6.357 2.931-6.357 6.763 0 3.805 2.885 6.763 6.357 6.763 1.992 0 3.498-.823 4.468-2.186v1.851h2.758V6.857h-2.758zM59.338 17.4c-2.297 0-4.034-1.723-4.034-4.114 0-2.392 1.736-4.115 4.034-4.115s4.034 1.723 4.034 4.115c0 2.391-1.736 4.114-4.034 4.114zM70.723 4.929c.97 0 1.762-.823 1.762-1.775 0-.977-.792-1.774-1.762-1.774s-1.762.797-1.762 1.774c0 .952.792 1.775 1.762 1.775zm-1.379 14.785h2.758V6.857h-2.758v12.857zm5.96 0h2.757V.943h-2.758v18.771zM95.969 6.857l-2.502 8.872-2.655-8.872h-2.63L85.5 15.73l-2.477-8.872h-2.91l4.008 12.857h2.707l2.68-8.665 2.656 8.665h2.706L98.88 6.857h-2.911zm6.32-1.928c.97 0 1.762-.823 1.762-1.775 0-.977-.792-1.774-1.762-1.774s-1.762.797-1.762 1.774c0 .952.792 1.775 1.762 1.775zm-1.379 14.785h2.758V6.857h-2.758v12.857zm12.674-13.191c-1.736 0-3.115.643-3.957 1.98V6.857h-2.758v12.857h2.758v-6.891c0-2.623 1.43-3.703 3.242-3.703 1.737 0 2.86 1.029 2.86 2.983v7.611h2.757V11.82c0-3.343-2.042-5.297-4.902-5.297zm17.982-4.809v6.969c-.971-1.337-2.477-2.16-4.468-2.16-3.473 0-6.358 2.931-6.358 6.763 0 3.805 2.885 6.763 6.358 6.763 1.991 0 3.497-.823 4.468-2.186v1.851h2.757v-18h-2.757zM127.532 17.4c-2.298 0-4.034-1.723-4.034-4.114 0-2.392 1.736-4.115 4.034-4.115 2.297 0 4.034 1.723 4.034 4.115 0 2.391-1.737 4.114-4.034 4.114z"
+                            fill="currentColor"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M145.532 3.429h8.511c.902 0 1.768.36 2.407 1.004.638.643.997 1.515.997 2.424v8.572c0 .909-.359 1.781-.997 2.424a3.394 3.394 0 01-2.407 1.004h-8.511a3.39 3.39 0 01-2.407-1.004 3.438 3.438 0 01-.997-2.424V6.857c0-.91.358-1.781.997-2.424a3.39 3.39 0 012.407-1.004zm-5.106 3.428c0-1.364.538-2.672 1.495-3.636a5.09 5.09 0 013.611-1.507h8.511c1.354 0 2.653.542 3.61 1.507a5.16 5.16 0 011.496 3.636v8.572a5.16 5.16 0 01-1.496 3.636 5.086 5.086 0 01-3.61 1.506h-8.511a5.09 5.09 0 01-3.611-1.506 5.164 5.164 0 01-1.495-3.636V6.857zm10.907 6.251c0 1.812-1.359 2.916-3.193 2.916-1.823 0-3.182-1.104-3.182-2.916v-5.65h1.633v5.52c0 .815.429 1.427 1.549 1.427 1.12 0 1.549-.612 1.549-1.428v-5.52h1.644v5.652zm1.72 2.748V7.457h1.644v8.4h-1.644z"
+                            fill="currentColor"></path>
+                    </svg></a>
+                <div class="hidden lg:flex lg:items-center"><a href="/components">Components</a><a class="ml-8"
+                        href="/templates">Templates</a>
+                    <div class="ml-2 hidden rounded-full bg-sky-500 px-1.5 py-0.5 text-xs text-white sm:block">New
+                    </div><a class="ml-8" href="/documentation">Documentation</a>
+                </div><button type="button" class="-my-1 ml-8 flex h-8 w-8 items-center justify-center rounded-lg"><span
+                        class="sr-only">Search components</span><svg fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 fill-gray-900 hover:fill-gray-900">
+                        <path
+                            d="M20.47 21.53a.75.75 0 1 0 1.06-1.06l-1.06 1.06Zm-9.97-4.28a6.75 6.75 0 0 1-6.75-6.75h-1.5a8.25 8.25 0 0 0 8.25 8.25v-1.5ZM3.75 10.5a6.75 6.75 0 0 1 6.75-6.75v-1.5a8.25 8.25 0 0 0-8.25 8.25h1.5Zm6.75-6.75a6.75 6.75 0 0 1 6.75 6.75h1.5a8.25 8.25 0 0 0-8.25-8.25v1.5Zm11.03 16.72-5.196-5.197-1.061 1.06 5.197 5.197 1.06-1.06Zm-4.28-9.97c0 1.864-.755 3.55-1.977 4.773l1.06 1.06A8.226 8.226 0 0 0 18.75 10.5h-1.5Zm-1.977 4.773A6.727 6.727 0 0 1 10.5 17.25v1.5a8.226 8.226 0 0 0 5.834-2.416l-1.061-1.061Z">
+                        </path>
+                    </svg></button><button type="button"
+                    class="-my-1 ml-6 -mr-1 flex h-8 w-8 items-center justify-center lg:hidden"><span
+                        class="sr-only">Open navigation</span><svg viewBox="0 0 24 24" class="h-6 w-6 stroke-slate-900">
+                        <path d="M3.75 12h16.5M3.75 6.75h16.5M3.75 17.25h16.5" fill="none" stroke-width="1.5"
+                            stroke-linecap="round"></path>
+                    </svg></button>
+                <div class="hidden lg:ml-8 lg:flex lg:items-center lg:border-l lg:border-slate-900/15 lg:pl-8"><a
+                        href="/login">Sign in</a><a
+                        class="inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 bg-slate-900 text-white hover:bg-slate-700 -my-2.5 ml-8"
+                        href="/all-access"><span>Get all-access <span aria-hidden="true">→</span></span></a></div>
+            </div>
+        </nav>
+    </header>
+    <div class="relative -mt-[5.75rem] bg-slate-50 pt-[5.75rem]">
+        <div class="absolute inset-0 overflow-hidden"><img src="/img/beams-template-header.png" alt=""
+                class="absolute bottom-0 hidden lg:block" /><img src="/img/beams-templates.png" alt=""
+                class="absolute -top-[7rem] left-1/2 -ml-[16rem] w-[60.4375rem] max-w-none sm:-ml-[10rem] md:-ml-[16rem] lg:-top-[10rem] lg:-ml-[22rem] lg:hidden" />
         </div>
-        <div class="flex w-full">
-            <div class="h-full w-full">
-                <img class="w-full" src="https://via.placeholder.com/500x400" />
+        <div class="relative">
+            <div class="relative mx-auto max-w-container px-4 pt-16 sm:px-6 lg:px-8 lg:pt-20">
+                <div class="mx-auto grid max-w-[40rem] grid-cols-1 gap-y-16 gap-x-8 lg:max-w-none lg:grid-cols-3">
+                    <div class="flex flex-col lg:pb-6">
+                        <h1
+                            class="mt-4 text-4xl font-extrabold leading-none tracking-tight text-slate-900 sm:text-5xl sm:leading-[3.5rem]">
+                            Salient</h1>
+                        <p class="order-first text-base font-semibold leading-7 text-sky-500">SaaS marketing
+                             template
+                        </p>
+                        <p class="mt-6 text-base leading-7 text-slate-700">Every SaaS marketing site uses the same
+                            formula — a hero, feature sections, some testimonials, you know the drill. But some are
+                            prettier than others.</p>
+                        <div class="flex flex-wrap mt-6">
+                            <div class="flex items-center text-sm font-medium text-slate-500"><svg fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-8 w-8 flex-none stroke-current text-slate-400" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <ellipse cx="16" cy="16" rx="13" ry="5"></ellipse>
+                                    <ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(60 16 16)"></ellipse>
+                                    <ellipse rx="13" ry="5" transform="matrix(-.5 .86603 .86603 .5 16 16)">
+                                    </ellipse>
+                                    <circle cx="16" cy="16" r="2"></circle>
+                                </svg><span class="ml-2.5">React</span></div>
+                            <div class="flex items-center text-sm font-medium text-slate-500 ml-6"><svg fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-8 w-8 flex-none stroke-current text-slate-400" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <defs>
+                                        <linearGradient id="next-icon-gradient-a" x1="15.125" y1="18.25" x2="24.25"
+                                            y2="27.375" gradientUnits="userSpaceOnUse">
+                                            <stop offset=".24" stop-color="currentColor"></stop>
+                                            <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+                                        </linearGradient>
+                                        <linearGradient id="next-icon-gradient-b" x1="20.5" y1="11.25" x2="20.5"
+                                            y2="18.25" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="currentColor"></stop>
+                                            <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <path
+                                        d="M16.25 28.5c6.765 0 12.25-5.485 12.25-12.25S23.015 4 16.25 4 4 9.485 4 16.25 9.485 28.5 16.25 28.5Z">
+                                    </path>
+                                    <path d="M12 21.5V12l12.25 14.25" stroke="url(#next-icon-gradient-a)"></path>
+                                    <path d="M21.25 12a.75.75 0 1 0-1.5 0v8.17l1.5 1.64V12Z"
+                                        fill="url(#next-icon-gradient-b)" stroke-width="0"></path>
+                                </svg><span class="ml-2.5">Next.js</span></div>
+                        </div>
+                        <div class="mt-10 flex gap-4"><a href="https://salient.tailwindui.com"
+                                class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700"
+                                target="_blank"><span><span class="inline-flex items-center"><span>Live
+                                            preview</span><svg viewBox="0 0 20 20" class="ml-1.5 h-5 w-5 fill-slate-400"
+                                            fill-rule="evenodd" clip-rule="evenodd">
+                                            <path
+                                                d="M7 3.25H3.25v13.5h13.5V13h-1.5v2.25H4.75V4.75H7v-1.5Zm9.75 0H10v1.5h4.19l-5.72 5.72 1.06 1.06 5.72-5.72V10h1.5V3.25Z">
+                                            </path>
+                                        </svg></span></span></a><a href="#pricing"
+                                class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white/0 text-slate-900 ring-1 ring-slate-900/10 hover:bg-white/25 hover:ring-slate-900/15 "><span>Get
+                                    this template
+                                     <span aria-hidden="true" class="text-black/25">→</span>
+                                </span></a></div>
+                    </div>
+                    <div class="relative lg:col-span-2"><img src="/img/templates/salient/banner.png" width="1600"
+                            height="1280"
+                            class="relative z-20 -mb-36 aspect-[800/640] rounded-xl bg-slate-200 shadow-xl shadow-black/5 ring-1 ring-slate-900/5 sm:-mb-16 lg:-mb-8 xl:-mb-16" />
+                        <div class="z-0 hidden md:block">
+                            <div
+                                class="absolute -top-4 -right-12 -left-12 h-px bg-slate-900/[0.1] [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
+                            </div>
+                            <div
+                                class="absolute -top-12 bottom-0 -left-4 w-px bg-slate-900/[0.1] [mask-image:linear-gradient(to_top,white_4rem,white_calc(100%-4rem),transparent)]">
+                            </div>
+                            <div
+                                class="absolute -top-12 bottom-0 -right-4 w-px bg-slate-900/[0.1] [mask-image:linear-gradient(to_top,white_4rem,white_calc(100%-4rem),transparent)]">
+                            </div>
+                            <div class="absolute -top-12 right-10 mt-px flex h-8 items-end overflow-hidden">
+                                <div class="flex -mb-px h-[2px] w-80 -scale-x-100">
+                                    <div
+                                        class="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]">
+                                    </div>
+                                    <div
+                                        class="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute bottom-0 -left-48 flex h-8 items-end overflow-hidden">
+                                <div class="flex -mb-px h-[2px] w-80 -scale-x-100">
+                                    <div
+                                        class="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]">
+                                    </div>
+                                    <div
+                                        class="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute inset-x-0 bottom-0 h-px overflow-hidden">
+            <div
+                class="absolute -right-8 bottom-0 -left-8 h-px bg-slate-900/[0.1] [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
             </div>
         </div>
     </div>
-</section>
-
-<section class="relative w-full flex">
     <div
-        class="rounded-lg w-full grid grid-flow-row sm:grid-flow-row grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-gray-100 bg-white-500 z-10">
-        <div class="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
-            style="opacity: 1; transform: none;">
-            <div class="flex mx-auto w-40 sm:w-auto">
-                <div class="flex items-center justify-center bg-blue-100 w-12 h-12 mr-6 rounded-full">
-                    <i class='text-2xl bx bx-group'></i>
+        class="mx-auto mt-52 w-full max-w-container px-4 pb-20 sm:mt-36 sm:px-6 sm:pb-24 lg:mt-28 lg:px-8 lg:pb-32 xl:mt-36">
+        <div
+            class="mx-auto max-w-[40rem] space-y-20 divide-y divide-slate-200 sm:space-y-24 lg:max-w-none lg:space-y-32">
+            <section class="grid grid-cols-1 items-baseline gap-y-10 gap-x-6 lg:grid-cols-3">
+                <h2 class="text-2xl font-semibold leading-9 tracking-tight text-slate-900">What’s included</h2>
+                <div
+                    class="max-w-2xl space-y-10 lg:col-span-2 prose prose-slate prose-a:font-semibold prose-a:text-sky-500 hover:prose-a:text-sky-600">
+                    <div class="[&amp;&gt;:first-child]:mt-0 [&amp;&gt;:last-child]:mb-0">
+                        <p>Salient is a beautiful landing page template for your next SaaS idea, built with Tailwind
+                            CSS and Next.js and designed and built by the Tailwind CSS team. It’s production-ready
+                            and easy to customize, making it the perfect starting point for your own project.</p>
+                        <p>We’ve taken just as much care with the code as we have with the design, so it’s also an
+                            invaluable resource if you want to study how experts build a website with Tailwind CSS
+                            and React.</p>
+                    </div>
+                    <p><strong>Built by experts</strong> — you can trust that all of the code is written following
+                        Tailwind CSS best practices, because it’s written by the same team who created and maintain
+                        the framework.</p>
+                    <p><strong>Easy to customize</strong> — everything is styled with utility classes, directly in
+                        the markup. No configuration variables or complex CSS to wrestle with, just open the markup
+                        in your editor and change whatever you want.</p>
+                    <p><strong>Built with Next.js</strong> — the template is a well-structured, thoughtfully
+                        componentized Next.js project, giving you a codebase that’s productive and enjoyable to work
+                        in.</p>
+                    <p><strong>Keyboard accessible</strong> — everything we build is keyboard accessible, and we
+                        carefully craft the markup to deliver the best screenreader experience we know how.</p>
+                    <p><strong>Production-ready</strong> — rigorously tested in the latest versions of all browsers
+                        to handle lots of edge-cases you might easily miss yourself.</p>
+                    <p><strong>Simple to deploy</strong> — production-ready and easily deployed anywhere that you
+                        can deploy a Next.js application, like Vercel or Netlify.</p>
                 </div>
-                <div class="flex flex-col">
-                    <p class="text-xl text-black-600 font-bold">
-                        390+
-                    </p>
-                    <p class="text-lg text-black-500">Students</p>
+            </section>
+            <section class="grid grid-cols-1 gap-y-10 gap-x-6 pt-10 lg:grid-cols-3">
+                <h2 class="text-2xl font-semibold leading-9 tracking-tight text-slate-900">Screenshots</h2>
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2"><img
+                        src="https://tailwindui.com/img/templates/salient/detail-01.png" alt="This is a detail image"
+                        class="aspect-[384/246] rounded-lg bg-slate-200 ring-1 ring-slate-900/10" /><img
+                        src="https://tailwindui.com/img/templates/salient/detail-02.png" alt="This is a detail image"
+                        class="aspect-[384/246] rounded-lg bg-slate-200 ring-1 ring-slate-900/10" /><img
+                        src="https://tailwindui.com/img/templates/salient/detail-03.png" alt="This is a detail image"
+                        class="aspect-[384/246] rounded-lg bg-slate-200 ring-1 ring-slate-900/10" /><img
+                        src="https://tailwindui.com/img/templates/salient/detail-04.png" alt="This is a detail image"
+                        class="aspect-[384/246] rounded-lg bg-slate-200 ring-1 ring-slate-900/10" /></div>
+            </section>
+            <section class="grid grid-cols-1 gap-y-10 gap-x-6 pt-10 lg:grid-cols-3">
+                <h2 class="text-2xl font-semibold leading-9 tracking-tight text-slate-900">Built for developers</h2>
+                <div
+                    class="max-w-none lg:col-span-2 prose prose-slate prose-a:font-semibold prose-a:text-sky-500 hover:prose-a:text-sky-600">
+                    <p>Our templates are thoughtfully crafted with the latest and greatest versions of the tools we
+                        love so that they are easy to maintain, and fun to actually work on.</p>
+                    <div class="not-prose mt-6">
+                        <ul class="grid grid-cols-2 gap-x-8 gap-y-6">
+                            <li><strong class="font-semibold text-slate-900">Next.js</strong> v12.3</li>
+                            <li><strong class="font-semibold text-slate-900">Tailwind CSS</strong> v3.1</li>
+                            <li><strong class="font-semibold text-slate-900">Headless UI</strong> v1.7</li>
+                            <li><strong class="font-semibold text-slate-900">React</strong> v18</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
-            style="opacity: 1; transform: none;">
-            <div class="flex mx-auto w-40 sm:w-auto">
-                <div class="flex items-center justify-center bg-blue-100 w-12 h-12 mr-6 rounded-full">
-                    <i class="text-2xl bx bx-category-alt"></i>
-                </div>
-                <div class="flex flex-col">
-                    <p class="text-xl text-black-600 font-bold">
-                        20+
-                    </p>
-                    <p class="text-lg text-black-500">Domains</p>
-                </div>
-            </div>
-        </div>
-        <div class="flex items-center justify-start sm:justify-center py-4 sm:py-6 w-8/12 px-4 sm:w-auto mx-auto sm:mx-0"
-            style="opacity: 1; transform: none;">
-            <div class="flex mx-auto w-40 sm:w-auto">
-                <div class="flex items-center justify-center bg-blue-100 w-12 h-12 mr-6 rounded-full">
-                    <i class="text-2xl bx bx-user"></i>
-                </div>
-                <div class="flex flex-col">
-                    <p class="text-xl text-black-600 font-bold">
-                        50+
-                    </p>
-                    <p class="text-lg text-black-500">Events</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-64 sm:h-48 top-0 mt-8 mx-auto left-0 right-0"
-        style="filter:blur(114px)"></div>
-</section>
-
-<section>
-    <div class="container max-w-5xl">
-        <div class="flex flex-wrap">
-            <div class="w-5/6 sm:w-1/2 p-6">
-                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                    Lorem ipsum dolor sit amet
-                </h3>
-                <p class="text-gray-600 mb-8">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et
-                    sit amet ligula.
-                </p>
-            </div>
-            <div class="w-full sm:w-1/2 p-6">
-                <img class="w-full" src="https://via.placeholder.com/500x400" />
-            </div>
-        </div>
-        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-            <div class="w-full sm:w-1/2 p-6 mt-6">
-                <img class="w-full" src="https://via.placeholder.com/500x400" />
-            </div>
-            <div class="w-full sm:w-1/2 p-6 mt-6">
-                <div class="align-middle">
-                    <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                        Lorem ipsum dolor sit amet
-                    </h3>
-                    <p class="text-gray-600 mb-8">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo
-                        posuere et sit amet ligula.
-                    </p>
-                </div>
-            </div>
+            </section>
         </div>
     </div>
-</section>
-</section>
-            </div>
-
-            <div id="rightoverlay"
-                class="overlay bg-black opacity-50 fixed w-full h-screen z-40 top-0 right-0 hidden lg:hidden"
-                onclick="rightover()"></div>
-            <div id="rightaside"
-                class="right-aside lg:block w-[300px] lg:w-2/12 h-screen lg:static fixed z-50 lg:z-0 right-[-300px] top-0 lg:top-[64px] duration-300 bg-white lg:bg-transparent"><div class="lg:border rounded-2xl bg-white lg:my-5 select-none h-full lg:h-auto overflow-auto">
-    <div class="w-full">
-      <p class="px-5 py-3 text-sm text-gray-700 font-bold">Domains</p>
-      <hr class="m-0">
-    </div>
-    <aside class="flex flex-col p-2 text-sm">
-      
-      
-      <a href="https://neerajadhav.in/gdsc/domain/android/"
-        class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-gray-600 ">
-        <span class="text-2xl">
-          <i class='bx bxl-android'></i>
-        </span>
-        <span class="font-semibold">Android</span>
-      </a>
-      
-      <a href="https://neerajadhav.in/gdsc/domain/artificial-inteligence/"
-        class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-gray-600 ">
-        <span class="text-2xl">
-          <i class='bx bxl-python'></i>
-        </span>
-        <span class="font-semibold">Artificial Inteligence</span>
-      </a>
-      
-      <a href="https://neerajadhav.in/gdsc/domain/blockchain/"
-        class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-gray-600 ">
-        <span class="text-2xl">
-          <i class='bx bx-link'></i>
-        </span>
-        <span class="font-semibold">Blockchain</span>
-      </a>
-      
-      <a href="https://neerajadhav.in/gdsc/domain/cloud-computing/"
-        class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-gray-600 ">
-        <span class="text-2xl">
-          <i class='bx bxl-google-cloud'></i>
-        </span>
-        <span class="font-semibold">Cloud Computing</span>
-      </a>
-      
-      <a href="https://neerajadhav.in/gdsc/domain/content-writing/"
-        class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-gray-600 ">
-        <span class="text-2xl">
-          <i class='bx bx-pencil'></i>
-        </span>
-        <span class="font-semibold">Content Writing</span>
-      </a>
-      
-      <a href="https://neerajadhav.in/gdsc/domain/cyber-security/"
-        class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-gray-600 ">
-        <span class="text-2xl">
-          <i class='bx bx-terminal'></i>
-        </span>
-        <span class="font-semibold">Cyber Security</span>
-      </a>
-      
-      <a href="https://neerajadhav.in/gdsc/domain/data-science/"
-        class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-gray-600 ">
-        <span class="text-2xl">
-          <i class='bx bx-data'></i>
-        </span>
-        <span class="font-semibold">Data Science</span>
-      </a>
-      
-      <a href="https://neerajadhav.in/gdsc/domain/data-stucture-and-algorithms/"
-        class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-gray-600 ">
-        <span class="text-2xl">
-          <i class='bx bx-network-chart'></i>
-        </span>
-        <span class="font-semibold">Data Stucture and Algorithms</span>
-      </a>
-      
-      <a href="https://neerajadhav.in/gdsc/domain/graphic-designing/"
-        class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-gray-600 ">
-        <span class="text-2xl">
-          <i class='bx bx-vector'></i>
-        </span>
-        <span class="font-semibold">Graphic Designing</span>
-      </a>
-      
-      <a href="https://neerajadhav.in/gdsc/domain/marketing/"
-        class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-gray-600 ">
-        <span class="text-2xl">
-          <i class='bx bx-line-chart'></i>
-        </span>
-        <span class="font-semibold">Marketing</span>
-      </a>
-      
-      <a href="https://neerajadhav.in/gdsc/domain/web-dev/"
-        class="flex items-center space-x-3 rounded-xl p-2 hover:bg-gray-100  text-gray-600 ">
-        <span class="text-2xl">
-          <i class='bx bx-code-alt'></i>
-        </span>
-        <span class="font-semibold">Web Dev</span>
-      </a>
-      
-    </aside>
-  </div>  
-</div>
+    <div id="pricing" class="relative overflow-hidden bg-slate-50 pt-24 pb-20 lg:pb-24 xl:pb-32">
+        <img src="/img/beams-pricing.png" alt=""
+            class="absolute top-0 left-1/2 -ml-[40rem] w-[90.4375rem] max-w-none" />
+        <div
+            class="absolute inset-x-0 bottom-0 h-96 text-slate-600/10 [mask-image:linear-gradient(to_bottom,transparent,white)]">
+            <svg class="absolute inset-0 h-full w-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="pricing-pattern" width="32" height="32" patternUnits="userSpaceOnUse" x="50%" y="100%"
+                        patternTransform="translate(0 -1)">
+                        <path d="M0 32V.5H32" fill="none" stroke="currentColor"></path>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#pricing-pattern)"></rect>
+            </svg>
+        </div>
+        <div class="relative mx-auto max-w-container px-4 sm:px-6 lg:px-8">
+            <section class="mx-auto max-w-[40rem] lg:max-w-none">
+                <div class="max-w-3xl1 pr-12">
+                    <h2 class="text-base font-semibold leading-7 text-sky-500">Pricing</h2>
+                    <p class="mt-4 text-5xl font-extrabold tracking-tight text-slate-900">Get just one or get ’em
+                        all.</p>
+                    <p class="mt-4 max-w-xl text-base leading-8 text-slate-700">Every template includes free
+                        updates, and can be used on unlimited projects — both personal and commercial.</p>
+                    <div class="flex flex-wrap mt-9">
+                        <div class="flex items-center text-sm font-medium text-slate-500"><svg fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 flex-none stroke-current text-slate-400" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="16" cy="16" rx="13" ry="5"></ellipse>
+                                <ellipse cx="16" cy="16" rx="13" ry="5" transform="rotate(60 16 16)"></ellipse>
+                                <ellipse rx="13" ry="5" transform="matrix(-.5 .86603 .86603 .5 16 16)"></ellipse>
+                                <circle cx="16" cy="16" r="2"></circle>
+                            </svg><span class="ml-2.5">React</span></div>
+                        <div class="flex items-center text-sm font-medium text-slate-500 ml-6"><svg fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-8 w-8 flex-none stroke-current text-slate-400" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <defs>
+                                    <linearGradient id="next-icon-gradient-a" x1="15.125" y1="18.25" x2="24.25"
+                                        y2="27.375" gradientUnits="userSpaceOnUse">
+                                        <stop offset=".24" stop-color="currentColor"></stop>
+                                        <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+                                    </linearGradient>
+                                    <linearGradient id="next-icon-gradient-b" x1="20.5" y1="11.25" x2="20.5" y2="18.25"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="currentColor"></stop>
+                                        <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+                                    </linearGradient>
+                                </defs>
+                                <path
+                                    d="M16.25 28.5c6.765 0 12.25-5.485 12.25-12.25S23.015 4 16.25 4 4 9.485 4 16.25 9.485 28.5 16.25 28.5Z">
+                                </path>
+                                <path d="M12 21.5V12l12.25 14.25" stroke="url(#next-icon-gradient-a)"></path>
+                                <path d="M21.25 12a.75.75 0 1 0-1.5 0v8.17l1.5 1.64V12Z"
+                                    fill="url(#next-icon-gradient-b)" stroke-width="0"></path>
+                            </svg><span class="ml-2.5">Next.js</span></div>
+                    </div>
+                </div>
+                <div class="mt-16 lg:mt-0 lg:flex lg:flex-row-reverse lg:items-center">
+                    <div
+                        class="relative z-10 -mx-4 shadow-lg ring-1 ring-slate-900/10 sm:mx-0 sm:rounded-3xl lg:w-1/2 lg:flex-none">
+                        <div class="flex absolute -bottom-px left-1/2 -ml-48 h-[2px] w-96">
+                            <div
+                                class="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]">
+                            </div>
+                            <div
+                                class="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]">
+                            </div>
+                            <div
+                                class="-ml-[100%] w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]">
+                            </div>
+                            <div
+                                class="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]">
+                            </div>
+                        </div>
+                        <div class="relative bg-white px-4 py-10 sm:rounded-3xl sm:px-10">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-base font-semibold text-sky-500">Get with all-access</h3><a
+                                    class="inline-flex justify-center rounded-lg text-sm font-semibold py-2 px-3 bg-slate-900 text-white hover:bg-slate-700"
+                                    href="/all-access"><span>Get all-access <span aria-hidden="true">→</span></span></a>
+                            </div>
+                            <div class="mt-3 flex items-center">
+                                <p class="text-[2.5rem] leading-none text-slate-900">$<span class="font-bold">299</span>
+                                </p>
+                                <p class="ml-3 text-sm"><span class="font-semibold text-slate-900">one-time
+                                        payment</span><br /><span class="text-slate-500">plus local taxes</span></p>
+                            </div>
+                            <p class="mt-6 text-sm leading-6 text-slate-600">Get lifetime access to every one of our
+                                website templates as well as all of our component examples for a single one-time
+                                purchase.</p>
+                            <h4 class="sr-only">All-access features</h4>
+                            <ul
+                                class="mt-10 space-y-8 border-t border-slate-900/10 pt-10 text-sm leading-6 text-slate-700">
+                                <li class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"
+                                        class="h-8 w-8 flex-none">
+                                        <path fill="#fff" d="M0 0h32v32H0z"></path>
+                                        <rect width="23" height="22" x="3" y="5" stroke="#0EA5E9"
+                                            stroke-linejoin="round" stroke-width="1.5" rx="2"></rect>
+                                        <rect width="10" height="18" x="19" y="9" fill="#E0F2FE" stroke="#0EA5E9"
+                                            stroke-linejoin="round" stroke-width="1.5" rx="2"></rect>
+                                        <circle cx="6" cy="8" r="1" fill="#0EA5E9"></circle>
+                                        <circle cx="9" cy="8" r="1" fill="#0EA5E9"></circle>
+                                        <path stroke="#0EA5E9" stroke-width="1.5" d="M3 11h16"></path>
+                                    </svg>
+                                    <p class="ml-5"><strong class="font-semibold text-slate-900">Every site
+                                            template</strong> — beautifully designed, expertly crafted
+                                        website templates built with modern technologies like React and Next.js.</p>
+                                </li>
+                                <li class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"
+                                        class="h-8 w-8 flex-none">
+                                        <path fill="#fff" d="M0 0h32v32H0z"></path>
+                                        <path fill="#E0F2FE"
+                                            d="M23 22l7-4v7l-7 4v-7zM9 22l7-4v7l-7 4v-7zM16 11l7-4v7l-7 4v-7zM2 18l7 4v7l-7-4v-7zM9 7l7 4v7l-7-4V7zM16 18l7 4v7l-7-4v-7z">
+                                        </path>
+                                        <path fill="#0EA5E9"
+                                            d="M16 3l.372-.651a.75.75 0 00-.744 0L16 3zm7 4h.75a.75.75 0 00-.378-.651L23 7zM9 7l-.372-.651A.75.75 0 008.25 7H9zM2 18l-.372-.651A.75.75 0 001.25 18H2zm28 0h.75a.75.75 0 00-.378-.651L30 18zm0 7l.372.651A.75.75 0 0030.75 25H30zm-7 4l-.372.651a.75.75 0 00.744 0L23 29zM9 29l-.372.651a.75.75 0 00.744 0L9 29zm-7-4h-.75c0 .27.144.518.378.651L2 25zM15.628 3.651l7 4 .744-1.302-7-4-.744 1.302zm7 2.698l-7 4 .744 1.302 7-4-.744-1.302zm-6.256 4l-7-4-.744 1.302 7 4 .744-1.302zm-7-2.698l7-4-.744-1.302-7 4 .744 1.302zm-.744 7l7 4 .744-1.302-7-4-.744 1.302zm7 2.698l-7 4 .744 1.302 7-4-.744-1.302zm-6.256 4l-7-4-.744 1.302 7 4 .744-1.302zm-7-2.698l7-4-.744-1.302-7 4 .744 1.302zm20.256-4l7 4 .744-1.302-7-4-.744 1.302zm7 2.698l-7 4 .744 1.302 7-4-.744-1.302zm-6.256 4l-7-4-.744 1.302 7 4 .744-1.302zm-7-2.698l7-4-.744-1.302-7 4 .744 1.302zm13.256 5.698l-7 4 .744 1.302 7-4-.744-1.302zm-6.256 4l-7-4-.744 1.302 7 4 .744-1.302zM30.75 25v-7h-1.5v7h1.5zm-15.122-.651l-7 4 .744 1.302 7-4-.744-1.302zm-6.256 4l-7-4-.744 1.302 7 4 .744-1.302zM2.75 25v-7h-1.5v7h1.5zm14 0v-7h-1.5v7h1.5zM8.25 7v7h1.5V7h-1.5zm14 0v7h1.5V7h-1.5zm-7 4v7h1.5v-7h-1.5zm-7 11v7h1.5v-7h-1.5zm14 0v7h1.5v-7h-1.5z">
+                                        </path>
+                                    </svg>
+                                    <p class="ml-5"><strong class="font-semibold text-slate-900">Over 500+
+                                            components</strong> — everything you need to build beautiful
+                                        application UIs, marketing sites, ecommerce stores, and more.</p>
+                                </li>
+                                <li class="flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"
+                                        class="h-8 w-8 flex-none">
+                                        <path fill="#fff" d="M0 0h32v32H0z"></path>
+                                        <path fill="#E0F2FE"
+                                            d="M13.168 18.828a4 4 0 110-5.656L15.997 16l1.5-1.5 1.328-1.328a4 4 0 110 5.656L15.996 16l-1.499 1.5-1.329 1.328z">
+                                        </path>
+                                        <path stroke="#0EA5E9" stroke-linecap="round" stroke-width="1.5"
+                                            d="M14.497 17.5l-1.329 1.328a4 4 0 110-5.656l5.657 5.656a4 4 0 100-5.656L17.496 14.5">
+                                        </path>
+                                        <circle cx="16" cy="16" r="14" stroke="#0EA5E9" stroke-width="1.5"></circle>
+                                    </svg>
+                                    <p class="ml-5"><strong class="font-semibold text-slate-900">Lifetime
+                                            access</strong> — get instant access to everything we have today, plus
+                                        any new components and templates we add in the future.</p>
+                                </li>
+                            </ul>
+                            <div class="relative mt-10 flex rounded-xl border border-slate-600/10 bg-slate-50 p-6">
+                                <svg fill="none" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 flex-none"
+                                    stroke="#94A3B8" stroke-width="1.5">
+                                    <circle cx="11" cy="16" r="3.25" fill="#94A3B8" fill-opacity=".2"></circle>
+                                    <circle cx="21" cy="13" r="3.25" fill="#94A3B8" fill-opacity=".2"></circle>
+                                    <path
+                                        d="M28.909 19c.223-.964.341-1.968.341-3 0-7.318-5.932-13.25-13.25-13.25S2.75 8.682 2.75 16c0 1.032.118 2.036.341 3"
+                                        stroke-linecap="round"></path>
+                                    <path
+                                        d="m18.031 29.016-2.187.109s-1.475-.118-1.827-.29c-1.049-.51-.579-2.915 0-3.95 1.157-2.064 3.752-5.135 7.125-5.135h.024c2.5 0 4.404 1.687 5.692 3.401-1.963 2.975-5.161 5.276-8.827 5.865Z"
+                                        fill="#94A3B8" fill-opacity=".2" stroke-linejoin="round"></path>
+                                    <path
+                                        d="m14.001 24.913.016-.027c.26-.465.593-.98.991-1.5-1.042-.918-2.374-1.636-3.988-1.636H11c-2.094 0-3.847 1.208-5.055 2.492a12.987 12.987 0 0 0 7.987 4.595l.057-.016c-1.004-.534-.555-2.868.012-3.908Z"
+                                        fill="#94A3B8" fill-opacity=".2" stroke-linejoin="round"></path>
+                                </svg>
+                                <p class="ml-5 text-sm leading-6 text-slate-700"><strong
+                                        class="font-semibold text-slate-900">Available for teams</strong> — get
+                                    access to all of our templates and components plus any future updates for your
+                                    entire team.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative mt-10 lg:mt-0 lg:w-1/2 lg:flex-none">
+                        <div
+                            class="absolute -inset-y-8 -left-2 w-px bg-slate-900/10 [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)] sm:left-0">
+                        </div>
+                        <div
+                            class="absolute -inset-y-8 -right-2 w-px bg-slate-900/10 [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)] sm:right-0 lg:hidden">
+                        </div>
+                        <div
+                            class="absolute -inset-x-8 top-0 h-px bg-slate-900/10 [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
+                        </div>
+                        <div
+                            class="absolute -inset-x-8 bottom-0 h-px bg-slate-900/10 [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
+                        </div>
+                        <div class="px-2 py-8 sm:px-8">
+                            <div class="mx-auto max-w-[28.75rem]">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="text-base font-semibold text-slate-500"><span
+                                            class="text-slate-900">Salient</span><span class="hidden sm:inline"> —
+                                        </span><span class="block text-sm sm:inline sm:text-base">SaaS marketing
+                                             template
+                                        </span></h3><a
+                                        class="inline-flex justify-center rounded-lg text-sm font-semibold py-2 px-3 text-slate-900 ring-1 ring-slate-900/10 hover:ring-slate-900/20"
+                                        href="https://tailwindui.com/checkout/ea20ca6e-20f1-4532-876d-6879d92f5ef1"><span>Get
+                                            template
+                                             <span aria-hidden="true" class="text-black/25">→</span>
+                                        </span></a>
+                                </div>
+                                <p class="mt-2 flex items-center"><span class="text-2xl text-slate-900">$<span
+                                            class="font-bold">99</span></span><span
+                                        class="ml-2 text-sm text-slate-500">plus local taxes</span></p>
+                                <p class="mt-2 text-sm leading-6 text-slate-700">A beautiful SaaS landing page to
+                                    announce your next big idea.</p>
+                            </div>
+                        </div>
+                        <div class="relative py-10 px-2 sm:px-8">
+                            <div
+                                class="absolute -inset-x-8 top-0 h-px bg-slate-900/10 [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
+                            </div>
+                            <ul role="list" class="mx-auto max-w-[28.75rem] space-y-8 text-sm leading-6 text-slate-700">
+                                <li class="flex"><svg class="h-6 w-6 flex-none fill-slate-400"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.672 12.122a1 1 0 0 0-1.344 1.481l1.344-1.48Zm9.98-3.22a1 1 0 0 0-1.304-1.517L17.652 8.9Zm-6.882 7.383-.673.74a1 1 0 0 0 1.579-.317l-.906-.423Zm.906.423c1.382-2.961 3.428-5.616 5.976-7.807l-1.304-1.516c-2.752 2.366-4.976 5.245-6.485 8.477l1.813.846Zm-5.348-3.105 3.77 3.423 1.344-1.481-3.77-3.423-1.344 1.481Z">
+                                        </path>
+                                    </svg>
+                                    <p class="ml-3"><strong class="font-semibold text-slate-900">Unlimited
+                                            projects</strong> —
+                                        
+                                        buy once and use this template for as many projects as you need,
+                                        both personal and commercial.
+                                    </p>
+                                </li>
+                                <li class="flex"><svg class="h-6 w-6 flex-none fill-slate-400"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.672 12.122a1 1 0 0 0-1.344 1.481l1.344-1.48Zm9.98-3.22a1 1 0 0 0-1.304-1.517L17.652 8.9Zm-6.882 7.383-.673.74a1 1 0 0 0 1.579-.317l-.906-.423Zm.906.423c1.382-2.961 3.428-5.616 5.976-7.807l-1.304-1.516c-2.752 2.366-4.976 5.245-6.485 8.477l1.813.846Zm-5.348-3.105 3.77 3.423 1.344-1.481-3.77-3.423-1.344 1.481Z">
+                                        </path>
+                                    </svg>
+                                    <p class="ml-3"><strong class="font-semibold text-slate-900">Free
+                                            updates</strong> —
+                                        
+                                        any updates we make to the template are included with your original
+                                        purchase.
+                                    </p>
+                                </li>
+                                <li class="flex"><svg class="h-6 w-6 flex-none fill-slate-400"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.672 12.122a1 1 0 0 0-1.344 1.481l1.344-1.48Zm9.98-3.22a1 1 0 0 0-1.304-1.517L17.652 8.9Zm-6.882 7.383-.673.74a1 1 0 0 0 1.579-.317l-.906-.423Zm.906.423c1.382-2.961 3.428-5.616 5.976-7.807l-1.304-1.516c-2.752 2.366-4.976 5.245-6.485 8.477l1.813.846Zm-5.348-3.105 3.77 3.423 1.344-1.481-3.77-3.423-1.344 1.481Z">
+                                        </path>
+                                    </svg>
+                                    <p class="ml-3"><strong class="font-semibold text-slate-900">Simple .zip
+                                            file</strong> —
+                                        
+                                        templates are delivered as a simple archive you can unzip and start
+                                        playing with right away.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mt-20 lg:mt-24">
+                <h2 class="sr-only">Testimonials</h2>
+                <div class="mx-auto max-w-[40rem] lg:max-w-[50rem]"><button type="button" aria-hidden="true"
+                        style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0"></button>
+                    <div class="flex justify-center space-x-4 pt-2" role="tablist" aria-orientation="horizontal">
+                        <button
+                            class="h-12 w-12 overflow-hidden rounded-full bg-slate-100 shadow-md ring-2 ring-white transition [&amp;:focus:not(:focus-visible)]:outline-none opacity-40"
+                            id="headlessui-tabs-tab-undefined" role="tab" type="button" aria-selected="false"
+                            tabindex="-1"><img src="/img/maccaw-profile.jpeg" alt="" /><span class="sr-only">Alex
+                                MacCaw</span></button><button
+                            class="h-12 w-12 overflow-hidden rounded-full bg-slate-100 shadow-md ring-2 ring-white transition [&amp;:focus:not(:focus-visible)]:outline-none opacity-40"
+                            id="headlessui-tabs-tab-undefined" role="tab" type="button" aria-selected="false"
+                            tabindex="-1"><img src="/img/benbarbersmith-profile.jpeg" alt="" /><span class="sr-only">Ben
+                                Barbersmith</span></button><button
+                            class="h-12 w-12 overflow-hidden rounded-full bg-slate-100 shadow-md ring-2 ring-white transition [&amp;:focus:not(:focus-visible)]:outline-none opacity-40"
+                            id="headlessui-tabs-tab-undefined" role="tab" type="button" aria-selected="false"
+                            tabindex="-1"><img src="/img/justin-profile.jpg" alt="" /><span class="sr-only">Justin
+                                Jackson</span></button>
+                    </div>
+                    <div class="mt-10"></div>
+                </div>
+            </section>
         </div>
     </div>
+    <section id="faqs" class="mx-auto w-full max-w-container px-4 sm:px-6 lg:px-8 mt-32">
+        <div
+            class="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-14 lg:max-w-5xl lg:px-8 xl:max-w-none xl:grid-cols-12 xl:px-0">
+            <div class="lg:col-span-4">
+                <h2 class="text-base font-semibold leading-7 text-indigo-500">Frequently asked questions</h2>
+                <p class="mt-4 text-4xl font-extrabold tracking-tight text-slate-900 xl:text-5xl xl:leading-[3.5rem]">
+                    Everything you need to know</p>
+            </div>
+            <div class="-mb-4 space-y-12 lg:col-span-8 xl:col-span-7 xl:col-start-6">
+                <section>
+                    <h3 class="text-sm font-semibold leading-7 text-slate-400">General</h3>
+                    <dl class="mt-2 divide-y divide-slate-100">
+                        <details class="group py-4 marker:content-[&#x27;&#x27;]">
+                            <summary
+                                class="flex w-full cursor-pointer select-none justify-between text-left text-base font-semibold leading-7 text-slate-900 group-open:text-indigo-600 [&amp;::-webkit-details-marker]:hidden">
+                                What does “lifetime access” mean exactly?<svg
+                                    class="mt-0.5 ml-4 h-6 w-6 flex-none stroke-slate-700 group-open:stroke-indigo-500"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 12H6"></path>
+                                    <path class="group-open:hidden" d="M12 6v12"></path>
+                                </svg></summary>
+                            <div class="pt-6 pb-6">
+                                <div
+                                    class="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+                                    <p>Tailwind UI products are a
+                                         <strong>one-time purchase, with no recurring subscription</strong>.
+                                        When you purchase any Tailwind UI product, you have access to all of the
+                                        content in that product forever.
+                                    </p>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="group py-4 marker:content-[&#x27;&#x27;]">
+                            <summary
+                                class="flex w-full cursor-pointer select-none justify-between text-left text-base font-semibold leading-7 text-slate-900 group-open:text-indigo-600 [&amp;::-webkit-details-marker]:hidden">
+                                What does “free updates” include?<svg
+                                    class="mt-0.5 ml-4 h-6 w-6 flex-none stroke-slate-700 group-open:stroke-indigo-500"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 12H6"></path>
+                                    <path class="group-open:hidden" d="M12 6v12"></path>
+                                </svg></summary>
+                            <div class="pt-6 pb-6">
+                                <div
+                                    class="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+                                    <p>When you purchase any Tailwind UI product, any improvements we make to that
+                                        product will always be free for anyone who owns that product.</p>
+                                    <p><strong>Individual templates:</strong> When you buy an individual template,
+                                        any improvements we make to that template will be available to you as part
+                                        of your original purchase.</p>
+                                    <p>So if we fix a bug or upgrade the template to use the latest version of
+                                        Tailwind CSS or Next.js, you can download an updated version of the template
+                                        free of charge.</p>
+                                    <p>Any <em>new</em> templates we release are considered separate products, and
+                                        can be purchased separately.</p>
+                                    <p><strong>All-access:</strong> When you purchase an all-access license, you get
+                                        access to every site template available <em>and</em> every component package
+                                        available today, plus any new templates or component packages we release in
+                                        the future at no additional cost.</p>
+                                    <p>This means that if we add a brand new social media website template or new
+                                        component package like “Journalism”, access to those products are included
+                                        in your original purchase, with no upgrade cost.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </dl>
+                </section>
+                <section>
+                    <h3 class="text-sm font-semibold leading-7 text-slate-400">Compatibility</h3>
+                    <dl class="mt-2 divide-y divide-slate-100">
+                        <details class="group py-4 marker:content-[&#x27;&#x27;]">
+                            <summary
+                                class="flex w-full cursor-pointer select-none justify-between text-left text-base font-semibold leading-7 text-slate-900 group-open:text-indigo-600 [&amp;::-webkit-details-marker]:hidden">
+                                Are Figma, Sketch, or Adobe XD files included?<svg
+                                    class="mt-0.5 ml-4 h-6 w-6 flex-none stroke-slate-700 group-open:stroke-indigo-500"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 12H6"></path>
+                                    <path class="group-open:hidden" d="M12 6v12"></path>
+                                </svg></summary>
+                            <div class="pt-6 pb-6">
+                                <div
+                                    class="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+                                    <p>No, design assets for tools like Figma, Sketch, or Adobe XD are not included.
+                                    </p>
+                                    <p>We don&#x27;t produce high-quality design artifacts as part of our own design
+                                        and development process, so building these extra resources means we
+                                        can&#x27;t spend as much time creating new components and templates in code
+                                        which is where we believe we can provide the most value.</p>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="group py-4 marker:content-[&#x27;&#x27;]">
+                            <summary
+                                class="flex w-full cursor-pointer select-none justify-between text-left text-base font-semibold leading-7 text-slate-900 group-open:text-indigo-600 [&amp;::-webkit-details-marker]:hidden">
+                                What JS framework is used?<svg
+                                    class="mt-0.5 ml-4 h-6 w-6 flex-none stroke-slate-700 group-open:stroke-indigo-500"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 12H6"></path>
+                                    <path class="group-open:hidden" d="M12 6v12"></path>
+                                </svg></summary>
+                            <div class="pt-6 pb-6">
+                                <div
+                                    class="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+                                    <p>Our website templates are built using Next.js, so all of the markup is
+                                        written using React.</p>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="group py-4 marker:content-[&#x27;&#x27;]">
+                            <summary
+                                class="flex w-full cursor-pointer select-none justify-between text-left text-base font-semibold leading-7 text-slate-900 group-open:text-indigo-600 [&amp;::-webkit-details-marker]:hidden">
+                                What version of Tailwind CSS is used?<svg
+                                    class="mt-0.5 ml-4 h-6 w-6 flex-none stroke-slate-700 group-open:stroke-indigo-500"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 12H6"></path>
+                                    <path class="group-open:hidden" d="M12 6v12"></path>
+                                </svg></summary>
+                            <div class="pt-6 pb-6">
+                                <div
+                                    class="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+                                    <p>Everything in Tailwind UI is designed and developed for the latest version of
+                                        Tailwind CSS, which is currently Tailwind CSS v3.1.</p>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="group py-4 marker:content-[&#x27;&#x27;]">
+                            <summary
+                                class="flex w-full cursor-pointer select-none justify-between text-left text-base font-semibold leading-7 text-slate-900 group-open:text-indigo-600 [&amp;::-webkit-details-marker]:hidden">
+                                What browsers are supported?<svg
+                                    class="mt-0.5 ml-4 h-6 w-6 flex-none stroke-slate-700 group-open:stroke-indigo-500"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 12H6"></path>
+                                    <path class="group-open:hidden" d="M12 6v12"></path>
+                                </svg></summary>
+                            <div class="pt-6 pb-6">
+                                <div
+                                    class="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+                                    <p>The components and templates in Tailwind UI are designed to work in the
+                                        latest, stable releases of all major browsers, including Chrome, Firefox,
+                                        Safari, and Edge.</p>
+                                    <p>We don&#x27;t support Internet Explorer 11.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </dl>
+                </section>
+                <section>
+                    <h3 class="text-sm font-semibold leading-7 text-slate-400">Licensing</h3>
+                    <dl class="mt-2 divide-y divide-slate-100">
+                        <details class="group py-4 marker:content-[&#x27;&#x27;]">
+                            <summary
+                                class="flex w-full cursor-pointer select-none justify-between text-left text-base font-semibold leading-7 text-slate-900 group-open:text-indigo-600 [&amp;::-webkit-details-marker]:hidden">
+                                Do I need to purchase a license for each project I work on?<svg
+                                    class="mt-0.5 ml-4 h-6 w-6 flex-none stroke-slate-700 group-open:stroke-indigo-500"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 12H6"></path>
+                                    <path class="group-open:hidden" d="M12 6v12"></path>
+                                </svg></summary>
+                            <div class="pt-6 pb-6">
+                                <div
+                                    class="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+                                    <p>Unlike most other templates/themes, you don&#x27;t have to buy a new Tailwind
+                                        UI license every time you want to use it on a new project.</p>
+                                    <p>As long as what you&#x27;re building is allowed as per the license, you can
+                                        build as many sites as you want without ever having to buy an additional
+                                        license.</p>
+                                    <p>For more information and examples,
+                                         <a href="/license">read through our license</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="group py-4 marker:content-[&#x27;&#x27;]">
+                            <summary
+                                class="flex w-full cursor-pointer select-none justify-between text-left text-base font-semibold leading-7 text-slate-900 group-open:text-indigo-600 [&amp;::-webkit-details-marker]:hidden">
+                                Can I use Tailwind UI for client projects?<svg
+                                    class="mt-0.5 ml-4 h-6 w-6 flex-none stroke-slate-700 group-open:stroke-indigo-500"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 12H6"></path>
+                                    <path class="group-open:hidden" d="M12 6v12"></path>
+                                </svg></summary>
+                            <div class="pt-6 pb-6">
+                                <div
+                                    class="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+                                    <p>Yes! As long what you&#x27;re building is a custom website developed for a
+                                        single client, you can totally use components and templates in Tailwind UI
+                                        to help build it.</p>
+                                    <p>The only thing you can&#x27;t do is use Tailwind UI to build a website or
+                                        template that is resold to multiple clients.</p>
+                                    <p>For more information and examples, <a href="/license">read through our
+                                            license</a>.</p>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="group py-4 marker:content-[&#x27;&#x27;]">
+                            <summary
+                                class="flex w-full cursor-pointer select-none justify-between text-left text-base font-semibold leading-7 text-slate-900 group-open:text-indigo-600 [&amp;::-webkit-details-marker]:hidden">
+                                Can I use Tailwind UI for my own commercial projects?<svg
+                                    class="mt-0.5 ml-4 h-6 w-6 flex-none stroke-slate-700 group-open:stroke-indigo-500"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 12H6"></path>
+                                    <path class="group-open:hidden" d="M12 6v12"></path>
+                                </svg></summary>
+                            <div class="pt-6 pb-6">
+                                <div
+                                    class="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+                                    <p>Absolutely! Your license gives you permission to build as many of your own
+                                        projects as you like, whether those are simple public websites or SaaS
+                                        applications that end users need to pay to access.</p>
+                                    <p>As long as what you’re building isn’t a website builder or other tool that
+                                        customers can use to create their own sites using elements that originate
+                                        from Tailwind UI, you’re good to go.</p>
+                                    <p>For more information and examples, <a href="/license">read through our
+                                            license</a>.</p>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="group py-4 marker:content-[&#x27;&#x27;]">
+                            <summary
+                                class="flex w-full cursor-pointer select-none justify-between text-left text-base font-semibold leading-7 text-slate-900 group-open:text-indigo-600 [&amp;::-webkit-details-marker]:hidden">
+                                Can I use Tailwind UI in open source projects?<svg
+                                    class="mt-0.5 ml-4 h-6 w-6 flex-none stroke-slate-700 group-open:stroke-indigo-500"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 12H6"></path>
+                                    <path class="group-open:hidden" d="M12 6v12"></path>
+                                </svg></summary>
+                            <div class="pt-6 pb-6">
+                                <div
+                                    class="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+                                    <p>Yep! As long as what you&#x27;re building is some sort of actual website and
+                                        not a derivative component library, theme builder, or other product where
+                                        the primary purpose is clearly to repackage and redistribute our components,
+                                        it&#x27;s totally okay for that project to be open source.</p>
+                                    <p>For more information and examples of what is and isn&#x27;t okay,
+                                         <a href="/license">read through our license</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="group py-4 marker:content-[&#x27;&#x27;]">
+                            <summary
+                                class="flex w-full cursor-pointer select-none justify-between text-left text-base font-semibold leading-7 text-slate-900 group-open:text-indigo-600 [&amp;::-webkit-details-marker]:hidden">
+                                Can I sell templates/themes I build with Tailwind UI?<svg
+                                    class="mt-0.5 ml-4 h-6 w-6 flex-none stroke-slate-700 group-open:stroke-indigo-500"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 12H6"></path>
+                                    <path class="group-open:hidden" d="M12 6v12"></path>
+                                </svg></summary>
+                            <div class="pt-6 pb-6">
+                                <div
+                                    class="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+                                    <p>No, you cannot use Tailwind UI to create derivative products like themes, UI
+                                        kits, page builders, or anything else where you would be repackaging and
+                                        redistributing our components or templates for someone else to use to build
+                                        their own sites.</p>
+                                    <p>For more information and examples of what is and isn&#x27;t okay,
+                                         <a href="/license">read through our license</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </details>
+                    </dl>
+                </section>
+                <section>
+                    <h3 class="text-sm font-semibold leading-7 text-slate-400">Support</h3>
+                    <dl class="mt-2 divide-y divide-slate-100">
+                        <details class="group py-4 marker:content-[&#x27;&#x27;]">
+                            <summary
+                                class="flex w-full cursor-pointer select-none justify-between text-left text-base font-semibold leading-7 text-slate-900 group-open:text-indigo-600 [&amp;::-webkit-details-marker]:hidden">
+                                Do you offer technical support?<svg
+                                    class="mt-0.5 ml-4 h-6 w-6 flex-none stroke-slate-700 group-open:stroke-indigo-500"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 12H6"></path>
+                                    <path class="group-open:hidden" d="M12 6v12"></path>
+                                </svg></summary>
+                            <div class="pt-6 pb-6">
+                                <div
+                                    class="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+                                    <p>Tailwind UI is a self-serve product, meaning that while we do offer customer
+                                        support for things like account management and licensing related concerns,
+                                        the expectation is that customers have the requisite knowledge of Tailwind
+                                        CSS, HTML, React, and Vue to use the product successfully.</p>
+                                    <p>Because every project is different and the way independently authored pieces
+                                        of code interact can be complex and time-consuming to understand,
+                                         <strong>we do not offer technical support or consulting</strong>.
+                                    </p>
+                                    <p>Tailwind UI customers do get access to a private Discord community where you
+                                        can ask questions and help others with their questions in return, but we
+                                        don&#x27;t offer first-party technical support or consulting here ourselves.
+                                    </p>
+                                </div>
+                            </div>
+                        </details>
+                        <details class="group py-4 marker:content-[&#x27;&#x27;]">
+                            <summary
+                                class="flex w-full cursor-pointer select-none justify-between text-left text-base font-semibold leading-7 text-slate-900 group-open:text-indigo-600 [&amp;::-webkit-details-marker]:hidden">
+                                What is your refund policy?<svg
+                                    class="mt-0.5 ml-4 h-6 w-6 flex-none stroke-slate-700 group-open:stroke-indigo-500"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 12H6"></path>
+                                    <path class="group-open:hidden" d="M12 6v12"></path>
+                                </svg></summary>
+                            <div class="pt-6 pb-6">
+                                <div
+                                    class="prose prose-slate max-w-none prose-a:font-semibold prose-a:text-indigo-600 hover:prose-a:text-indigo-500">
+                                    <p>If you&#x27;re unhappy with your purchase for any reason, email us at
+                                         <a href="mailto:support@tailwindui.com">support@tailwindui.com</a>
+                                        within 30 days and we&#x27;ll refund you in full, no questions asked.
+                                    </p>
+                                </div>
+                            </div>
+                        </details>
+                    </dl>
+                </section>
+            </div>
+        </div>
+    </section>
+    <footer class="mx-auto mt-32 w-full max-w-container px-4 sm:px-6 lg:px-8">
+        <div class="border-t border-slate-900/5 py-10"><svg class="mx-auto h-5 w-auto text-slate-900" aria-hidden="true"
+                viewBox="0 0 160 24" fill="none">
+                <path
+                    d="M18.724 1.714c-4.538 0-7.376 2.286-8.51 6.857 1.702-2.285 3.687-3.143 5.957-2.57 1.296.325 2.22 1.271 3.245 2.318 1.668 1.706 3.6 3.681 7.819 3.681 4.539 0 7.376-2.286 8.51-6.857-1.701 2.286-3.687 3.143-5.957 2.571-1.294-.325-2.22-1.272-3.245-2.32-1.668-1.705-3.6-3.68-7.819-3.68zM10.214 12c-4.539 0-7.376 2.286-8.51 6.857 1.701-2.286 3.687-3.143 5.957-2.571 1.294.325 2.22 1.272 3.245 2.32 1.668 1.705 3.6 3.68 7.818 3.68 4.54 0 7.377-2.286 8.511-6.857-1.702 2.286-3.688 3.143-5.957 2.571-1.295-.326-2.22-1.272-3.245-2.32-1.669-1.705-3.6-3.68-7.82-3.68z"
+                    class="fill-sky-400"></path>
+                <path
+                    d="M51.285 9.531V6.857h-3.166v-3.6l-2.758.823v2.777h-2.348v2.674h2.348v6.172c0 3.343 1.686 4.526 5.924 4.011V17.22c-2.094.103-3.166.129-3.166-1.517V9.53h3.166zm12.087-2.674v1.826c-.97-1.337-2.476-2.16-4.468-2.16-3.472 0-6.357 2.931-6.357 6.763 0 3.805 2.885 6.763 6.357 6.763 1.992 0 3.498-.823 4.468-2.186v1.851h2.758V6.857h-2.758zM59.338 17.4c-2.297 0-4.034-1.723-4.034-4.114 0-2.392 1.736-4.115 4.034-4.115s4.034 1.723 4.034 4.115c0 2.391-1.736 4.114-4.034 4.114zM70.723 4.929c.97 0 1.762-.823 1.762-1.775 0-.977-.792-1.774-1.762-1.774s-1.762.797-1.762 1.774c0 .952.792 1.775 1.762 1.775zm-1.379 14.785h2.758V6.857h-2.758v12.857zm5.96 0h2.757V.943h-2.758v18.771zM95.969 6.857l-2.502 8.872-2.655-8.872h-2.63L85.5 15.73l-2.477-8.872h-2.91l4.008 12.857h2.707l2.68-8.665 2.656 8.665h2.706L98.88 6.857h-2.911zm6.32-1.928c.97 0 1.762-.823 1.762-1.775 0-.977-.792-1.774-1.762-1.774s-1.762.797-1.762 1.774c0 .952.792 1.775 1.762 1.775zm-1.379 14.785h2.758V6.857h-2.758v12.857zm12.674-13.191c-1.736 0-3.115.643-3.957 1.98V6.857h-2.758v12.857h2.758v-6.891c0-2.623 1.43-3.703 3.242-3.703 1.737 0 2.86 1.029 2.86 2.983v7.611h2.757V11.82c0-3.343-2.042-5.297-4.902-5.297zm17.982-4.809v6.969c-.971-1.337-2.477-2.16-4.468-2.16-3.473 0-6.358 2.931-6.358 6.763 0 3.805 2.885 6.763 6.358 6.763 1.991 0 3.497-.823 4.468-2.186v1.851h2.757v-18h-2.757zM127.532 17.4c-2.298 0-4.034-1.723-4.034-4.114 0-2.392 1.736-4.115 4.034-4.115 2.297 0 4.034 1.723 4.034 4.115 0 2.391-1.737 4.114-4.034 4.114z"
+                    fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M145.532 3.429h8.511c.902 0 1.768.36 2.407 1.004.638.643.997 1.515.997 2.424v8.572c0 .909-.359 1.781-.997 2.424a3.394 3.394 0 01-2.407 1.004h-8.511a3.39 3.39 0 01-2.407-1.004 3.438 3.438 0 01-.997-2.424V6.857c0-.91.358-1.781.997-2.424a3.39 3.39 0 012.407-1.004zm-5.106 3.428c0-1.364.538-2.672 1.495-3.636a5.09 5.09 0 013.611-1.507h8.511c1.354 0 2.653.542 3.61 1.507a5.16 5.16 0 011.496 3.636v8.572a5.16 5.16 0 01-1.496 3.636 5.086 5.086 0 01-3.61 1.506h-8.511a5.09 5.09 0 01-3.611-1.506 5.164 5.164 0 01-1.495-3.636V6.857zm10.907 6.251c0 1.812-1.359 2.916-3.193 2.916-1.823 0-3.182-1.104-3.182-2.916v-5.65h1.633v5.52c0 .815.429 1.427 1.549 1.427 1.12 0 1.549-.612 1.549-1.428v-5.52h1.644v5.652zm1.72 2.748V7.457h1.644v8.4h-1.644z"
+                    fill="currentColor"></path>
+            </svg>
+            <p class="mt-5 text-center text-sm leading-6 text-slate-500">© 2022 Tailwind Labs Inc. All rights
+                reserved.</p>
+            <div
+                class="mt-16 flex items-center justify-center space-x-4 text-sm font-semibold leading-6 text-slate-700">
+                <a href="/privacy-policy">Privacy policy</a>
+                <div class="h-4 w-px bg-slate-500/20"></div><a href="/changelog">Changelog</a>
+            </div>
+        </div>
+    </footer>
 </body>
-
-
-<script src="https://neerajadhav.in/gdsc/js/script.js"></script>
-<script src="https://neerajadhav.in/gdsc/js/extras.js"></script>
-
-</html>
