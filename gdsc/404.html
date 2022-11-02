@@ -19,34 +19,39 @@
     <link rel="shortcut icon" href="https://neerajadhav.in/gdsc/img/logo.png" type="image/png">
     <link rel="preload" href="https://tailwindui.com/fonts/Inter-roman.var.woff2?v=3.18" as="font" type="font/woff2"
         crossorigin="">
-    <link href="https://tailwindui.com/css/app.css?id=30dabc2ebaac25071486bd2f554bc432" rel="stylesheet" />
-
 </head><body id="body" class="bg-[#fafbff] lg:static lg:w-auto">
     <div class="wrapper w-full bg-white border-b z-30 relative">
         <div class="header-wrapper container mx-auto">
-            <header><div class="flex items-center justify-between select-none">
-    <div class="left-trigger lg:hidden">
-        <button onclick="leftopen()" class="my-3 mx-5 rounded text-2xl">
-            <i class='bx bx-expand-alt bx-rotate-90' ></i>
-        </button>
-    </div>
-    <div class="logo mx-auto lg:ml-0 py-3">
-        
-        <div class="flex items-center space-x-3">
-            <a href="https://neerajadhav.in/gdsc/"><img src="https://neerajadhav.in/gdsc/img/logoFull.png" alt="logo" class="w-44 lg:w-52"></a>
+            <header>
+
+<header class="relative z-50 w-full flex-none text-sm font-semibold leading-6 text-slate-900">
+    <nav aria-label="Global" class="mx-auto max-w-container px-4 lg:px-0">
+        <div class="relative flex items-center py-5">
+            
+            <a class="mr-auto flex-none text-slate-900" href="https://neerajadhav.in/gdsc/">
+                <span class="sr-only">GDSC SITRC</span>
+                GDSC SITRC
+            </a>
+            <button type="button" class="flex h-8 w-8 text-2xl items-center justify-center lg:hidden"
+                onclick="leftopen()">
+                <span class="sr-only">Open navigation</span>
+                <i class='bx bx-expand-alt bx-rotate-90'></i>
+            </button>
+            
+            <button type="button" class="-my-1 ml-6 -mr-1 flex h-8 w-8 items-center justify-center lg:hidden text-2xl"
+                onclick="rightopen()">
+                <span class="sr-only">Open navigation</span>
+                <i class='bx bx-category-alt'></i>
+            </button>
+            <div class="hidden lg:ml-8 lg:flex lg:items-center lg:pl-8">
+                <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 bg-slate-900 text-white hover:bg-slate-700 -my-2.5 ml-8"
+                    href="/all-access">
+                    <span>Join Club <span aria-hidden="true">→</span></span>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="left-trigger lg:hidden">
-        <button onclick="rightopen()" class="my-3 mx-5 rounded text-2xl">
-            <i class='bx bx-category-alt'></i>
-        </button>
-    </div>
-    <div class="z-30 left-trigger fixed bottom-0 right-0 m-5 lg:m-0 lg:static">
-        <button class="px-4 py-3 lg:px-3 lg:py-2 lg:my-2 rounded-lg shadow bg-blue-500 text-white">
-            <i class="fa fa-user-plus"></i> Join Club
-        </button>
-    </div>
-</div></header>
+    </nav>
+</header></header>
         </div>
     </div>
     <div class="wrapper w-full">
@@ -146,7 +151,7 @@
                 class="overlay bg-black opacity-50 fixed w-full h-screen z-40 top-0 right-0 hidden lg:hidden"
                 onclick="rightover()"></div>
             <div id="rightaside"
-                class="right-aside lg:block w-[300px] lg:w-2/12 h-screen lg:static fixed z-50 lg:z-0 right-[-300px] top-0 lg:top-[64px] duration-300 bg-white lg:bg-transparent"><div class="lg:border rounded-2xl bg-white lg:my-5 select-none h-full lg:h-auto overflow-auto">
+                class="right-aside lg:block w-[300px] lg:w-2/12 h-screen lg:static fixed z-50 lg:z-0 left-[-300px] top-0 lg:top-[64px] duration-300 bg-white lg:bg-transparent"><div class="lg:border rounded-2xl bg-white lg:my-5 select-none h-full lg:h-auto overflow-auto">
     <div class="w-full">
       <p class="px-5 py-3 text-sm text-gray-700 font-bold">Domains</p>
       <hr class="m-0">
